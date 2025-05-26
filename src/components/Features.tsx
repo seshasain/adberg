@@ -36,13 +36,13 @@ const Features = () => {
   ];
 
   return (
-    <section id="features" className="py-20 bg-gray-50" role="main">
+    <section id="features" className="py-20 bg-gray-900" role="main">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="font-montserrat font-bold text-3xl md:text-4xl text-secondary mb-4">
-            Why Choose SwiftReel AI?
+          <h2 className="font-montserrat font-bold text-3xl md:text-4xl text-white mb-4">
+            Why Choose adberg.ai?
           </h2>
-          <p className="font-opensans text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="font-opensans text-xl text-gray-300 max-w-3xl mx-auto">
             Cutting-edge AI technology meets creative excellence to deliver video ads that convert.
           </p>
         </div>
@@ -50,13 +50,13 @@ const Features = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((feature, index) => (
             <div key={index} className="animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
-              <Card className="h-full hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border-0 shadow-lg rounded-2xl overflow-hidden">
+              <Card className="h-full hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border-0 shadow-lg rounded-2xl overflow-hidden bg-gray-800/50 backdrop-blur-sm border border-gray-700/30">
                 <div className={`h-2 bg-gradient-to-r ${feature.gradient}`}></div>
                 <CardContent className="p-8">
-                  <h3 className="font-montserrat font-semibold text-xl text-secondary mb-4">
+                  <h3 className="font-montserrat font-semibold text-xl text-white mb-4">
                     {feature.title}
                   </h3>
-                  <p className="font-opensans text-gray-600 leading-relaxed">
+                  <p className="font-opensans text-gray-300 leading-relaxed">
                     {feature.description}
                   </p>
                 </CardContent>
@@ -66,34 +66,34 @@ const Features = () => {
         </div>
 
         {/* Feature Highlight */}
-        <div className="mt-16 bg-white rounded-2xl p-8 shadow-lg">
+        <div className="mt-16 bg-gray-800/50 backdrop-blur-sm border border-gray-700/30 rounded-2xl p-8 shadow-lg">
           <div className="grid lg:grid-cols-2 gap-8 items-center">
             <div>
-              <h3 className="font-montserrat font-bold text-2xl text-secondary mb-4">
+              <h3 className="font-montserrat font-bold text-2xl text-white mb-4">
                 Advanced AI Technology
               </h3>
-              <p className="font-opensans text-gray-600 mb-6 leading-relaxed">
+              <p className="font-opensans text-gray-300 mb-6 leading-relaxed">
                 Our proprietary AI models are trained on thousands of hours of professional video content, 
                 ensuring every generated video meets broadcast-quality standards.
               </p>
               <ul className="space-y-3">
                 <li className="flex items-center">
                   <div className="w-2 h-2 bg-primary rounded-full mr-3"></div>
-                  <span className="font-opensans text-gray-700">4K resolution output</span>
+                  <span className="font-opensans text-gray-300">4K resolution output</span>
                 </li>
                 <li className="flex items-center">
                   <div className="w-2 h-2 bg-primary rounded-full mr-3"></div>
-                  <span className="font-opensans text-gray-700">Multi-language support</span>
+                  <span className="font-opensans text-gray-300">Multi-language support</span>
                 </li>
                 <li className="flex items-center">
                   <div className="w-2 h-2 bg-primary rounded-full mr-3"></div>
-                  <span className="font-opensans text-gray-700">Custom brand voice training</span>
+                  <span className="font-opensans text-gray-300">Custom brand voice training</span>
                 </li>
               </ul>
             </div>
-            <div className="bg-gradient-to-br from-primary/10 to-accent/10 rounded-2xl p-8 text-center">
+            <div className="bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl p-8 text-center backdrop-blur-sm border border-primary/20">
               <div className="text-4xl mb-4">🎬</div>
-              <p className="font-opensans text-gray-600">
+              <p className="font-opensans text-gray-300">
                 Join 500+ brands already creating stunning AI videos
               </p>
             </div>
