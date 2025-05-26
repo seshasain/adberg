@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -26,12 +25,12 @@ export default {
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
 				primary: {
-					DEFAULT: '#1abc9c',
+					DEFAULT: '#6366f1',
 					foreground: '#ffffff'
 				},
 				secondary: {
-					DEFAULT: '#2c3e50',
-					foreground: '#ffffff'
+					DEFAULT: '#1f2937',
+					foreground: '#f3f4f6'
 				},
 				destructive: {
 					DEFAULT: 'hsl(var(--destructive))',
@@ -42,7 +41,7 @@ export default {
 					foreground: 'hsl(var(--muted-foreground))'
 				},
 				accent: {
-					DEFAULT: '#e74c3c',
+					DEFAULT: '#10b981',
 					foreground: '#ffffff'
 				},
 				popover: {
@@ -143,10 +142,10 @@ export default {
 				},
 				'glow-pulse': {
 					'0%, 100%': {
-						boxShadow: '0 0 20px rgba(26, 188, 156, 0.3)'
+						boxShadow: '0 0 20px rgba(99, 102, 241, 0.3)'
 					},
 					'50%': {
-						boxShadow: '0 0 40px rgba(26, 188, 156, 0.6)'
+						boxShadow: '0 0 40px rgba(99, 102, 241, 0.6)'
 					}
 				},
 				'float': {
