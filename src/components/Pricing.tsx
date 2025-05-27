@@ -9,13 +9,13 @@ const Pricing = () => {
   const plans = [
     {
       name: 'Pay-per-Video',
-      price: isYearly ? '$199' : '$249',
-      period: 'per video',
+      price: isYearly ? '$199' : '$149',
+      period: 'per Ad',
       description: 'Perfect for testing or occasional needs',
       features: [
         '1 professional video ad',
         'Up to 60 seconds duration',
-        '4K resolution output',
+        '1080p resolution output',
         'Basic revisions included',
         'Standard turnaround (48h)',
         'Email support',
@@ -24,13 +24,13 @@ const Pricing = () => {
     },
     {
       name: 'Monthly Retainer',
-      price: isYearly ? '$999' : '$1,199',
+      price: isYearly ? '$999' : '$999',
       period: 'per month',
       description: 'Best for growing businesses',
       features: [
         '5 professional video ads',
         'Up to 90 seconds duration',
-        '4K resolution output',
+        '2K resolution output',
         'Unlimited revisions',
         'Priority turnaround (24h)',
         'Dedicated account manager',
@@ -86,32 +86,7 @@ const Pricing = () => {
             Choose the plan that fits your video production needs. All plans include our core AI technology.
           </p>
 
-          {/* Toggle */}
-          <div className="flex items-center justify-center space-x-4">
-            <span className={`font-opensans ${!isYearly ? 'text-white font-semibold' : 'text-gray-400'}`}>
-              Monthly
-            </span>
-            <button
-              onClick={() => setIsYearly(!isYearly)}
-              className={`relative w-14 h-8 rounded-full transition-colors duration-200 ${
-                isYearly ? 'bg-primary' : 'bg-gray-600'
-              }`}
-            >
-              <div
-                className={`absolute top-1 w-6 h-6 bg-white rounded-full transition-transform duration-200 ${
-                  isYearly ? 'translate-x-7' : 'translate-x-1'
-                }`}
-              />
-            </button>
-            <span className={`font-opensans ${isYearly ? 'text-white font-semibold' : 'text-gray-400'}`}>
-              Yearly
-            </span>
-            {isYearly && (
-              <span className="bg-accent text-white px-3 py-1 rounded-full text-sm font-opensans font-semibold">
-                Save 20%
-              </span>
-            )}
-          </div>
+          
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
