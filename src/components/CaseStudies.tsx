@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { ArrowLeft, ArrowRight, Play } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
@@ -63,69 +62,78 @@ const CaseStudies = () => {
   const currentCase = caseStudies[currentStudy];
 
   return (
-    <section id="case-studies" className="py-20 bg-white" role="main">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="case-studies" className="py-20 bg-black relative overflow-hidden" role="main">
+      {/* Animated background elements */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute -top-40 left-40 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute -bottom-40 right-40 w-96 h-96 bg-accent/20 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+        
+        {/* Gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-br from-black/80 via-transparent to-black/60"></div>
+      </div>
+      
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="font-montserrat font-bold text-3xl md:text-4xl text-secondary mb-4">
+          <h2 className="font-montserrat font-bold text-3xl md:text-4xl text-white mb-4">
             Real Results, Real Impact
           </h2>
-          <p className="font-opensans text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="font-opensans text-xl text-gray-300 max-w-3xl mx-auto">
             See how businesses across industries are achieving remarkable results with AI-generated video content.
           </p>
         </div>
 
         {/* Main Case Study Display */}
-        <div className="bg-gradient-to-br from-gray-50 to-white rounded-2xl p-8 mb-8">
+        <div className="bg-black/50 backdrop-blur-sm border border-gray-800/30 rounded-2xl p-8 mb-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Content */}
             <div className="animate-fade-in">
               <div className="flex items-center mb-4">
                 <div className="text-3xl mr-4">{currentCase.thumbnail}</div>
                 <div>
-                  <h3 className="font-montserrat font-bold text-2xl text-secondary">
+                  <h3 className="font-montserrat font-bold text-2xl text-white">
                     {currentCase.company}
                   </h3>
-                  <p className="font-opensans text-gray-600">{currentCase.industry}</p>
+                  <p className="font-opensans text-gray-300">{currentCase.industry}</p>
                 </div>
               </div>
 
               <div className="space-y-6">
                 <div>
-                  <h4 className="font-montserrat font-semibold text-lg text-secondary mb-2">
+                  <h4 className="font-montserrat font-semibold text-lg text-white mb-2">
                     Challenge
                   </h4>
-                  <p className="font-opensans text-gray-600">{currentCase.challenge}</p>
+                  <p className="font-opensans text-gray-300">{currentCase.challenge}</p>
                 </div>
 
                 <div>
-                  <h4 className="font-montserrat font-semibold text-lg text-secondary mb-2">
+                  <h4 className="font-montserrat font-semibold text-lg text-white mb-2">
                     Solution
                   </h4>
-                  <p className="font-opensans text-gray-600">{currentCase.solution}</p>
+                  <p className="font-opensans text-gray-300">{currentCase.solution}</p>
                 </div>
 
                 <div>
-                  <h4 className="font-montserrat font-semibold text-lg text-secondary mb-4">
+                  <h4 className="font-montserrat font-semibold text-lg text-white mb-4">
                     Results
                   </h4>
                   <div className="grid grid-cols-3 gap-4">
-                    <div className="text-center p-4 bg-white rounded-2xl shadow-sm">
+                    <div className="text-center p-4 bg-black/70 rounded-2xl border border-gray-800/50">
                       <div className="font-montserrat font-bold text-2xl text-primary">
                         {currentCase.results.engagement}
                       </div>
-                      <div className="font-opensans text-sm text-gray-600">Engagement</div>
+                      <div className="font-opensans text-sm text-gray-300">Engagement</div>
                     </div>
-                    <div className="text-center p-4 bg-white rounded-2xl shadow-sm">
+                    <div className="text-center p-4 bg-black/70 rounded-2xl border border-gray-800/50">
                       <div className="font-montserrat font-bold text-2xl text-accent">
                         {currentCase.results.conversions}
                       </div>
-                      <div className="font-opensans text-sm text-gray-600">Conversions</div>
+                      <div className="font-opensans text-sm text-gray-300">Conversions</div>
                     </div>
-                    <div className="text-center p-4 bg-white rounded-2xl shadow-sm">
+                    <div className="text-center p-4 bg-black/70 rounded-2xl border border-gray-800/50">
                       <div className="font-montserrat font-bold text-2xl text-secondary">
                         {currentCase.results.cost}
                       </div>
-                      <div className="font-opensans text-sm text-gray-600">Cost</div>
+                      <div className="font-opensans text-sm text-gray-300">Cost</div>
                     </div>
                   </div>
                 </div>
@@ -134,23 +142,23 @@ const CaseStudies = () => {
 
             {/* Video Preview & Quote */}
             <div className="animate-slide-in-right">
-              <div className="bg-white rounded-2xl p-6 shadow-lg mb-6">
-                <div className="aspect-video bg-gray-100 rounded-2xl flex items-center justify-center mb-4 relative overflow-hidden">
+              <div className="bg-black/70 backdrop-blur-sm border border-gray-800/50 rounded-2xl p-6 shadow-lg mb-6">
+                <div className="aspect-video bg-black/50 rounded-2xl flex items-center justify-center mb-4 relative overflow-hidden">
                   <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20"></div>
-                  <div className="relative z-10 bg-white rounded-full p-4 shadow-lg cursor-pointer hover:scale-110 transition-transform">
+                  <div className="relative z-10 bg-black/70 border border-primary/30 rounded-full p-4 shadow-lg cursor-pointer hover:scale-110 transition-transform">
                     <Play className="w-8 h-8 text-primary" />
                   </div>
                 </div>
-                <p className="font-opensans text-sm text-gray-600 text-center">
+                <p className="font-opensans text-sm text-gray-300 text-center">
                   Watch the case study video
                 </p>
               </div>
 
-              <div className="bg-primary/5 rounded-2xl p-6">
-                <blockquote className="font-opensans text-gray-700 italic mb-4">
+              <div className="bg-black/60 backdrop-blur-sm border border-primary/20 rounded-2xl p-6">
+                <blockquote className="font-opensans text-gray-300 italic mb-4">
                   "{currentCase.quote}"
                 </blockquote>
-                <cite className="font-opensans font-semibold text-secondary not-italic">
+                <cite className="font-opensans font-semibold text-primary not-italic">
                   {currentCase.author}
                 </cite>
               </div>
@@ -163,7 +171,7 @@ const CaseStudies = () => {
           <Button
             onClick={prevStudy}
             variant="outline"
-            className="flex items-center space-x-2 border-2 border-gray-300 hover:border-primary hover:text-primary rounded-2xl"
+            className="flex items-center space-x-2 bg-black/50 text-white border-2 border-gray-700 hover:border-primary hover:text-primary rounded-2xl"
           >
             <ArrowLeft className="w-4 h-4" />
             <span>Previous</span>
@@ -176,7 +184,7 @@ const CaseStudies = () => {
                 key={index}
                 onClick={() => setCurrentStudy(index)}
                 className={`w-3 h-3 rounded-full transition-colors ${
-                  index === currentStudy ? 'bg-primary' : 'bg-gray-300'
+                  index === currentStudy ? 'bg-primary' : 'bg-gray-700'
                 }`}
               />
             ))}
@@ -185,7 +193,7 @@ const CaseStudies = () => {
           <Button
             onClick={nextStudy}
             variant="outline"
-            className="flex items-center space-x-2 border-2 border-gray-300 hover:border-primary hover:text-primary rounded-2xl"
+            className="flex items-center space-x-2 bg-black/50 text-white border-2 border-gray-700 hover:border-primary hover:text-primary rounded-2xl"
           >
             <span>Next</span>
             <ArrowRight className="w-4 h-4" />
@@ -193,31 +201,31 @@ const CaseStudies = () => {
         </div>
 
         {/* Summary Stats */}
-        <div className="mt-16 bg-gradient-to-r from-primary to-accent rounded-2xl p-8 text-white">
+        <div className="mt-16 bg-black/50 backdrop-blur-sm border border-gray-800/30 rounded-2xl p-8">
           <div className="text-center mb-8">
-            <h3 className="font-montserrat font-bold text-2xl mb-2">
+            <h3 className="font-montserrat font-bold text-2xl text-white mb-2">
               Collective Impact Across All Case Studies
             </h3>
-            <p className="font-opensans opacity-90">
+            <p className="font-opensans text-gray-300">
               The power of AI video generation in numbers
             </p>
           </div>
           <div className="grid md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="font-montserrat font-bold text-3xl mb-2">350%</div>
-              <div className="font-opensans text-sm opacity-90">Average Engagement Increase</div>
+              <div className="font-montserrat font-bold text-3xl text-primary mb-2">350%</div>
+              <div className="font-opensans text-sm text-gray-300">Average Engagement Increase</div>
             </div>
             <div>
-              <div className="font-montserrat font-bold text-3xl mb-2">149%</div>
-              <div className="font-opensans text-sm opacity-90">Average Conversion Boost</div>
+              <div className="font-montserrat font-bold text-3xl text-primary mb-2">149%</div>
+              <div className="font-opensans text-sm text-gray-300">Average Conversion Boost</div>
             </div>
             <div>
-              <div className="font-montserrat font-bold text-3xl mb-2">75%</div>
-              <div className="font-opensans text-sm opacity-90">Average Cost Reduction</div>
+              <div className="font-montserrat font-bold text-3xl text-primary mb-2">75%</div>
+              <div className="font-opensans text-sm text-gray-300">Average Cost Reduction</div>
             </div>
             <div>
-              <div className="font-montserrat font-bold text-3xl mb-2">24h</div>
-              <div className="font-opensans text-sm opacity-90">Average Turnaround Time</div>
+              <div className="font-montserrat font-bold text-3xl text-primary mb-2">24h</div>
+              <div className="font-opensans text-sm text-gray-300">Average Turnaround Time</div>
             </div>
           </div>
         </div>

@@ -1,4 +1,3 @@
-
 import { Play, Mail, Phone, MessageCircle } from 'lucide-react';
 
 const Footer = () => {
@@ -10,9 +9,15 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-gray-900 text-white py-16 border-t border-gray-800/50 relative overflow-hidden" role="contentinfo">
-      {/* Background decoration */}
-      <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900"></div>
+    <footer className="bg-black text-white py-16 border-t border-gray-800/50 relative overflow-hidden" role="contentinfo">
+      {/* Animated background elements */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute -top-40 left-40 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute -bottom-40 right-40 w-96 h-96 bg-accent/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+        
+        {/* Gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-br from-black/80 via-transparent to-black/60"></div>
+      </div>
       <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-primary/50 to-transparent"></div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -46,11 +51,9 @@ const Footer = () => {
             <h4 className="font-montserrat font-semibold text-lg mb-6 text-primary">Quick Links</h4>
             <ul className="space-y-3">
               {[
-                { name: 'How It Works', href: '#how-it-works' },
                 { name: 'Features', href: '#features' },
+                { name: 'Ad Showcase', href: '#ad-showcase' },
                 { name: 'Pricing', href: '#pricing' },
-                { name: 'Case Studies', href: '#case-studies' },
-                { name: 'About Us', href: '#about' },
               ].map((link) => (
                 <li key={link.name}>
                   <button
@@ -107,7 +110,7 @@ const Footer = () => {
         </div>
 
         {/* Bottom Section */}
-        <div className="border-t border-gray-800/50 pt-8 animate-fade-in" style={{ animationDelay: '0.6s' }}>
+        <div className="border-t border-gray-600/60 pt-8 animate-fade-in" style={{ animationDelay: '0.6s' }}>
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex space-x-6 mb-4 md:mb-0">
               <a href="#" className="font-opensans text-gray-400 hover:text-primary transition-colors duration-300 text-sm">

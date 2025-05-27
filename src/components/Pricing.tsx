@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Check } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -68,8 +67,17 @@ const Pricing = () => {
   };
 
   return (
-    <section id="pricing" className="py-20 bg-black" role="main">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="pricing" className="py-20 bg-black relative overflow-hidden" role="main">
+      {/* Animated background elements */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute -top-40 right-40 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute -bottom-40 left-40 w-96 h-96 bg-accent/20 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+        
+        {/* Gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-br from-black/80 via-transparent to-black/60"></div>
+      </div>
+      
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
           <h2 className="font-montserrat font-bold text-3xl md:text-4xl text-white mb-4">
             Simple, Transparent Pricing
@@ -109,9 +117,7 @@ const Pricing = () => {
         <div className="grid md:grid-cols-3 gap-8">
           {plans.map((plan, index) => (
             <div key={index} className="animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
-              <Card className={`relative h-full transition-all duration-300 transform hover:-translate-y-2 border-0 shadow-lg rounded-2xl bg-gray-800/50 backdrop-blur-sm border border-gray-700/30 ${
-                plan.popular ? 'ring-2 ring-primary scale-105' : ''
-              }`}>
+              <Card className={`relative h-full transition-all duration-300 transform hover:-translate-y-2 border-0 shadow-lg rounded-2xl bg-black/50 backdrop-blur-sm border ${plan.popular ? 'ring-2 ring-primary scale-105 border-primary/50' : 'border-gray-600/60'}`}>
                 {plan.popular && (
                   <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-primary text-white px-6 py-2 rounded-full text-sm font-opensans font-semibold">
                     Most Popular
@@ -162,7 +168,7 @@ const Pricing = () => {
         </div>
 
         {/* Feature Comparison */}
-        <div className="mt-16 bg-gray-800/50 backdrop-blur-sm border border-gray-700/30 rounded-2xl p-8 shadow-lg">
+        <div className="mt-16 bg-black/50 backdrop-blur-sm border border-gray-600/60 rounded-2xl p-8 shadow-lg">
           <h3 className="font-montserrat font-bold text-2xl text-white text-center mb-8">
             Feature Comparison
           </h3>

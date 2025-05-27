@@ -1,4 +1,3 @@
-
 import { Card, CardContent } from '@/components/ui/card';
 
 const Features = () => {
@@ -50,7 +49,7 @@ const Features = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((feature, index) => (
             <div key={index} className="animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
-              <Card className="h-full hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border-0 shadow-lg rounded-2xl overflow-hidden bg-gray-800/50 backdrop-blur-sm border border-gray-700/30">
+              <Card className="h-full hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border-0 shadow-lg rounded-2xl overflow-hidden bg-gray-800/50 backdrop-blur-sm border border-gray-600/60">
                 <div className={`h-2 bg-gradient-to-r ${feature.gradient}`}></div>
                 <CardContent className="p-8">
                   <h3 className="font-montserrat font-semibold text-xl text-white mb-4">
@@ -66,7 +65,7 @@ const Features = () => {
         </div>
 
         {/* Feature Highlight */}
-        <div className="mt-16 bg-gray-800/50 backdrop-blur-sm border border-gray-700/30 rounded-2xl p-8 shadow-lg">
+        <div className="mt-16 bg-gray-800/50 backdrop-blur-sm border border-gray-600/60 rounded-2xl p-8 shadow-lg">
           <div className="grid lg:grid-cols-2 gap-8 items-center">
             <div>
               <h3 className="font-montserrat font-bold text-2xl text-white mb-4">

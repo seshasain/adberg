@@ -1,12 +1,8 @@
-
 import Navigation from '@/components/Navigation';
 import Hero from '@/components/Hero';
-import HowItWorks from '@/components/HowItWorks';
 import Features from '@/components/Features';
-import UseCases from '@/components/UseCases';
+import AdShowcase from '@/components/AdShowcase';
 import Pricing from '@/components/Pricing';
-import CaseStudies from '@/components/CaseStudies';
-import About from '@/components/About';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 
@@ -16,12 +12,9 @@ const Index = () => {
       <Navigation />
       <main>
         <Hero />
-        <HowItWorks />
         <Features />
-        <UseCases />
+        <AdShowcase />
         <Pricing />
-        <CaseStudies />
-        <About />
         <Contact />
       </main>
       <Footer />

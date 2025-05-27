@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Menu, X, Play } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -7,12 +6,9 @@ const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navItems = [
-    { name: 'How It Works', href: '#how-it-works' },
     { name: 'Features', href: '#features' },
-    { name: 'Use Cases', href: '#use-cases' },
+    { name: 'Ad Showcase', href: '#ad-showcase' },
     { name: 'Pricing', href: '#pricing' },
-    { name: 'Case Studies', href: '#case-studies' },
-    { name: 'About', href: '#about' },
   ];
 
   const scrollToSection = (href: string) => {
@@ -24,12 +20,12 @@ const Navigation = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-black/95 backdrop-blur-xl shadow-2xl border-b border-gray-800/30">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-black/95 backdrop-blur-xl shadow-xl border-b border-gray-800/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-18">
           {/* Logo */}
           <div className="flex items-center space-x-3 animate-fade-in">
-            <div className="w-12 h-12 bg-gradient-to-r from-primary to-accent rounded-3xl flex items-center justify-center shadow-2xl transform hover:scale-110 transition-all duration-300 hover:shadow-primary/25">
+            <div className="w-12 h-12 bg-gradient-to-r from-primary to-accent rounded-3xl flex items-center justify-center shadow-xl transform hover:scale-110 transition-all duration-300 hover:shadow-primary/25">
               <Play className="w-6 h-6 text-white" />
             </div>
             <span className="font-montserrat font-bold text-2xl text-white tracking-tight">
@@ -82,7 +78,7 @@ const Navigation = () => {
               <button
                 key={item.name}
                 onClick={() => scrollToSection(item.href)}
-                className="block w-full text-left px-4 py-3 text-gray-300 hover:text-primary font-opensans transition-colors duration-300 text-lg rounded-2xl hover:bg-gray-800/30"
+                className="block w-full text-left px-4 py-3 text-gray-300 hover:text-primary font-opensans transition-colors duration-300 text-lg rounded-2xl hover:bg-black/70 border border-transparent hover:border-gray-800/50"
               >
                 {item.name}
               </button>

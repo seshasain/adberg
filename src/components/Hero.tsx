@@ -1,4 +1,3 @@
-
 import { Play, ArrowRight, Sparkles } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
@@ -31,16 +30,15 @@ const Hero = () => {
               <span className="font-opensans text-primary text-sm font-semibold uppercase tracking-wider bg-primary/10 px-4 py-2 rounded-full border border-primary/20">AI-Powered Studio</span>
             </div>
             
-            <h1 className="font-montserrat font-bold text-5xl md:text-6xl lg:text-7xl text-white leading-tight mb-8 animate-slide-in-left" style={{ animationDelay: '0.2s' }}>
+            <h1 className="font-montserrat font-bold text-5xl md:text-6xl lg:text-7xl text-white leading-tight mb-6 animate-slide-in-left" style={{ animationDelay: '0.2s' }}>
               Studio-Quality AI Video Ads,{' '}
               <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent animate-gradient-shift bg-[length:200%_200%]" style={{ animationDelay: '0.4s' }}>
                 Delivered in Hours
               </span>
             </h1>
             
-            <p className="font-opensans text-xl md:text-2xl text-gray-300 mb-10 leading-relaxed animate-slide-in-left max-w-2xl" style={{ animationDelay: '0.6s' }}>
-              Create human-like video ads with professional soundtracks using AI. 
-              Faster, cheaper, and more consistent than traditional production.
+            <p className="font-opensans text-xl text-gray-300 mb-10 leading-relaxed animate-slide-in-left max-w-2xl" style={{ animationDelay: '0.6s' }}>
+              <span className="text-primary font-semibold">We believe</span> every brand deserves authentic human connection through video—without barriers of cost, time, or complexity. Our AI delivers this faster and more affordably than traditional production.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-6 mb-12 animate-slide-in-left" style={{ animationDelay: '0.8s' }}>
@@ -55,7 +53,7 @@ const Hero = () => {
               
               <Button 
                 variant="outline"
-                onClick={() => scrollToSection('#how-it-works')}
+                onClick={() => scrollToSection('#features')}
                 className="border-2 border-primary/50 text-primary hover:bg-primary hover:text-black font-opensans font-semibold px-10 py-5 rounded-3xl transition-all duration-300 bg-transparent backdrop-blur-sm hover:shadow-xl hover:shadow-primary/20 text-lg"
                 size="lg"
               >
