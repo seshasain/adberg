@@ -1,73 +1,141 @@
-# Welcome to your Lovable project
+# Adberg.ai - AI-Powered Video Ad Creation Platform
 
-## Project info
+A modern, high-quality AI video ad creation platform with authentication powered by Supabase and database management with Prisma.
 
-**URL**: https://lovable.dev/projects/11a8e2e4-1a06-4a54-8c76-b9a8a1ce2c6c
+## 🚀 Features
 
-## How can I edit this code?
+- **Modern Authentication**: Secure login/signup with Supabase Auth
+- **User Dashboard**: Personalized dashboard for managing video projects
+- **Protected Routes**: Secure access to authenticated areas
+- **Responsive Design**: Beautiful UI that works on all devices
+- **Database Integration**: Prisma ORM with PostgreSQL via Supabase
+- **Type Safety**: Full TypeScript support throughout the application
 
-There are several ways of editing your application.
+## 🛠 Tech Stack
 
-**Use Lovable**
+- **Frontend**: React 18, TypeScript, Vite
+- **UI Components**: shadcn/ui with Radix UI primitives
+- **Styling**: Tailwind CSS with custom animations
+- **Authentication**: Supabase Auth
+- **Database**: PostgreSQL via Supabase with Prisma ORM
+- **State Management**: React Context API
+- **Form Handling**: React Hook Form with Zod validation
+- **Routing**: React Router v6
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/11a8e2e4-1a06-4a54-8c76-b9a8a1ce2c6c) and start prompting.
+## 📋 Prerequisites
 
-Changes made via Lovable will be committed automatically to this repo.
+- Node.js 18+ and npm
+- Supabase account and project
 
-**Use your preferred IDE**
+## ⚡ Quick Start
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
+1. **Clone the repository**
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
 git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
 cd <YOUR_PROJECT_NAME>
+```
 
-# Step 3: Install the necessary dependencies.
-npm i
+2. **Install dependencies**
+```sh
+npm install
+```
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+3. **Set up environment variables**
+Create a `.env.local` file in the root directory:
+```env
+# Supabase Configuration
+VITE_SUPABASE_URL=your_supabase_project_url
+VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
+
+# Database Configuration for Prisma
+DATABASE_URL="your_supabase_database_url_with_pooling"
+DIRECT_URL="your_supabase_direct_database_url"
+```
+
+4. **Set up the database**
+Run the SQL migration in your Supabase SQL editor:
+```sh
+# Copy the contents of prisma/migrations/001_initial_setup.sql
+# and run it in your Supabase SQL editor
+```
+
+5. **Generate Prisma client**
+```sh
+npx prisma generate
+```
+
+6. **Start the development server**
+```sh
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+## 🔧 Configuration
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Supabase Setup
 
-**Use GitHub Codespaces**
+1. Create a new Supabase project
+2. Copy your project URL and anon key from the API settings
+3. Run the SQL migration from `prisma/migrations/001_initial_setup.sql` in the SQL editor
+4. Enable Row Level Security (RLS) policies are included in the migration
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+### Authentication Flow
 
-## What technologies are used for this project?
+- Users can sign up with email/password
+- Email confirmation is required (configurable in Supabase Auth settings)
+- User profiles are automatically created in the database upon first sign-in
+- Protected routes redirect unauthenticated users to the home page
 
-This project is built with:
+## 📁 Project Structure
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+```
+src/
+├── components/
+│   ├── auth/           # Authentication components
+│   ├── ui/             # Reusable UI components (shadcn/ui)
+│   ├── Navigation.tsx  # Main navigation with auth integration
+│   └── ProtectedRoute.tsx
+├── contexts/
+│   └── AuthContext.tsx # Authentication state management
+├── lib/
+│   ├── supabase.ts     # Supabase client configuration
+│   ├── prisma.ts       # Prisma client configuration
+│   └── userService.ts  # User-related database operations
+├── pages/
+│   ├── Index.tsx       # Landing page
+│   └── Dashboard.tsx   # Protected dashboard
+└── App.tsx             # Main app with routing
+```
 
-## How can I deploy this project?
+## 🎨 Design System
 
-Simply open [Lovable](https://lovable.dev/projects/11a8e2e4-1a06-4a54-8c76-b9a8a1ce2c6c) and click on Share -> Publish.
+The application follows a modern dark theme with:
+- **Primary Color**: Purple (#6366f1)
+- **Accent Color**: Green (#10b981)
+- **Typography**: Montserrat (headings) + Open Sans (body)
+- **Animations**: Smooth transitions and hover effects
+- **Responsive**: Mobile-first design approach
 
-## Can I connect a custom domain to my Lovable project?
+## 🚀 Deployment
 
-Yes, you can!
+### Vercel (Recommended)
+1. Connect your GitHub repository to Vercel
+2. Add environment variables in Vercel dashboard
+3. Deploy automatically on push
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+### Netlify
+1. Build the project: `npm run build`
+2. Upload the `dist` folder to Netlify
+3. Configure environment variables
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## 🔒 Security Features
+
+- Row Level Security (RLS) enabled on all database tables
+- JWT-based authentication with Supabase
+- Protected API routes with user context
+- Input validation with Zod schemas
+- XSS protection with proper sanitization
+
+## 📝 License
+
+This project is licensed under the MIT License.

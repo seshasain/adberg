@@ -1,0 +1,62 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+model User {
+  id        String   @id @default(dbgenerated("uuid_generate_v4()")) @db.Uuid
+  email     String   @unique
+  name      String?
+  avatar    String?
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @default(now()) @map("updated_at")
+
+  // Supabase auth user ID
+  authId String @unique @map("auth_id") @db.Uuid
+
+  // User profile information
+  company   String?
+  role      String?
+  phone     String?
+
+  // Subscription and usage tracking
+  plan         String   @default("free") // free, pro, enterprise
+  creditsUsed  Int      @default(0) @map("credits_used")
+  creditsLimit Int      @default(100) @map("credits_limit")
+
+  // Video projects
+  projects Project[]
+
+  @@map("users")
+}
+
+model Project {
+  id          String   @id @default(dbgenerated("uuid_generate_v4()")) @db.Uuid
+  title       String
+  description String?
+  status      String   @default("draft") // draft, processing, completed, failed
+  videoUrl    String?  @map("video_url")
+  thumbnailUrl String? @map("thumbnail_url")
+  createdAt   DateTime @default(now()) @map("created_at")
+  updatedAt   DateTime @default(now()) @map("updated_at")
+
+  // Project configuration
+  duration    Int?     // in seconds
+  style       String?  // commercial, social, explainer, etc.
+  voiceType   String?  @map("voice_type") // male, female, neutral
+  musicStyle  String?  @map("music_style")
+
+  // Relationships
+  userId String @map("user_id") @db.Uuid
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("projects")
+}
