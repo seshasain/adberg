@@ -1,4 +1,4 @@
-# Adberg.ai - AI-Powered Video Ad Creation Platform
+# medianode.ai - AI-Powered Video Ad Creation Platform
 
 A modern, high-quality AI video ad creation platform with authentication powered by Supabase and database management with Prisma.
 

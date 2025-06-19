@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Dialog, DialogContent, DialogHeader } from '@/components/ui/dialog'
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from '@/components/ui/dialog'
 import { LoginForm } from './LoginForm'
 import { SignupForm } from './SignupForm'
 import { X, Play } from 'lucide-react'
@@ -25,16 +25,19 @@ export const AuthModal: React.FC<AuthModalProps> = ({
 
   return (
     <Dialog open={isOpen} onOpenChange={handleClose}>
-      <DialogContent className="sm:max-w-md bg-gray-900/95 backdrop-blur-xl border border-gray-700/50 shadow-2xl">
-        <DialogHeader className="relative">
-          <div className="flex items-center justify-center space-x-3 mb-6">
-            <div className="w-10 h-10 bg-gradient-to-r from-primary to-accent rounded-2xl flex items-center justify-center shadow-lg">
-              <Play className="w-5 h-5 text-white" />
+      <DialogContent className="bg-gray-900 border-gray-800 text-white max-w-md w-full rounded-2xl shadow-2xl">
+        <DialogHeader className="text-center p-8">
+          <div className="flex justify-center mb-6">
+            <div className="w-16 h-16 bg-gradient-to-r from-primary to-accent rounded-3xl flex items-center justify-center shadow-xl">
+              <Play className="w-8 h-8 text-white" />
             </div>
-            <span className="font-montserrat font-bold text-xl text-white">
-              adberg.ai
-            </span>
           </div>
+          <DialogTitle className="font-montserrat text-3xl font-bold tracking-tight">
+            Welcome to medianode.ai
+          </DialogTitle>
+          <DialogDescription className="font-opensans text-gray-400 pt-2">
+            Sign in or create an account to start creating
+          </DialogDescription>
         </DialogHeader>
 
         <div className="space-y-6">

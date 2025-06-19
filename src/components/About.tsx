@@ -61,7 +61,7 @@ const About = () => {
         {/* Mission Statement */}
         <div className="text-center mb-20">
           <h2 className="font-montserrat font-bold text-3xl md:text-4xl text-white mb-6">
-            Our Purpose at adberg.ai
+            Our Purpose at medianode.ai
           </h2>
           <div className="max-w-4xl mx-auto">
             <p className="font-opensans text-xl text-gray-300 leading-relaxed mb-8">

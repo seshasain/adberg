@@ -2,6 +2,7 @@ import React, { createContext, useContext, useEffect, useState } from 'react'
 import { User, Session } from '@supabase/supabase-js'
 import { supabase } from '@/lib/supabase'
 import { createUser, getUserByAuthId } from '@/lib/userService'
+import { linkAnonymousConsultations } from '@/lib/consultationService'
 import { toast } from '@/hooks/use-toast'
 
 interface AuthContextType {
@@ -60,6 +61,21 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
             name: session.user.user_metadata?.name,
             company: session.user.user_metadata?.company,
           })
+        }
+
+        // Link any anonymous consultations to this user
+        if (session.user.email) {
+          try {
+            const { linkedCount } = await linkAnonymousConsultations(session.user.email)
+            if (linkedCount > 0) {
+              toast({
+                title: "Consultations linked!",
+                description: `We found ${linkedCount} previous consultation${linkedCount > 1 ? 's' : ''} and linked them to your account.`,
+              })
+            }
+          } catch (err) {
+            console.error('Error linking consultations:', err)
+          }
         }
 
         toast({

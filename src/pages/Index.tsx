@@ -1,9 +1,6 @@
 import Navigation from '@/components/Navigation';
 import Hero from '@/components/Hero';
-import Features from '@/components/Features';
-import AdShowcase from '@/components/AdShowcase';
-import Pricing from '@/components/Pricing';
-import Contact from '@/components/Contact';
+import ServiceSelector from '@/components/ServiceSelector';
 import Footer from '@/components/Footer';
 
 const Index = () => {
@@ -12,10 +9,7 @@ const Index = () => {
       <Navigation />
       <main>
         <Hero />
-        <Features />
-        <AdShowcase />
-        <Pricing />
-        <Contact />
+        <ServiceSelector />
       </main>
       <Footer />
     </div>

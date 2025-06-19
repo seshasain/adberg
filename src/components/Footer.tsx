@@ -8,6 +8,13 @@ const Footer = () => {
     }
   };
 
+  const supportLinks = [
+    { name: 'Help Center' },
+    { name: 'API Documentation' },
+    { name: 'Video Tutorials' },
+    { name: 'Community Forum' },
+  ];
+
   return (
     <footer className="bg-black text-white py-16 border-t border-gray-800/50 relative overflow-hidden" role="contentinfo">
       {/* Animated background elements */}
@@ -28,16 +35,15 @@ const Footer = () => {
               <div className="w-10 h-10 bg-gradient-to-r from-primary to-accent rounded-xl flex items-center justify-center shadow-lg">
                 <Play className="w-5 h-5 text-white" />
               </div>
-              <span className="font-montserrat font-bold text-xl">adberg.ai</span>
+              <span className="font-montserrat font-bold text-xl">medianode.ai</span>
             </div>
             <p className="font-opensans text-gray-300 mb-6 leading-relaxed animate-fade-in" style={{ animationDelay: '0.2s' }}>
-              Democratizing professional video production through AI. Create studio-quality, 
-              human-like video ads with professional soundtracks in hours, not weeks.
+              Democratizing professional visual content creation through AI. Our modern SaaS platform empowers you to create studio-quality images and dynamic video ads with human-like realism in hours, not weeks, all with a UI/UX built for trust and clarity.
             </p>
             <div className="space-y-3 animate-fade-in" style={{ animationDelay: '0.4s' }}>
               <div className="flex items-center space-x-3 group">
                 <Mail className="w-5 h-5 text-primary group-hover:text-accent transition-colors duration-300" />
-                <span className="font-opensans text-gray-300 group-hover:text-white transition-colors duration-300">hello@adberg.ai</span>
+                <span className="font-opensans text-gray-300 group-hover:text-white transition-colors duration-300">hello@medianode.ai</span>
               </div>
               <div className="flex items-center space-x-3 group">
                 <Phone className="w-5 h-5 text-primary group-hover:text-accent transition-colors duration-300" />
@@ -72,30 +78,17 @@ const Footer = () => {
           <div className="animate-slide-in-right" style={{ animationDelay: '0.4s' }}>
             <h4 className="font-montserrat font-semibold text-lg mb-6 text-primary">Support</h4>
             <ul className="space-y-3">
-              <li>
-                <a href="#" className="font-opensans text-gray-300 hover:text-primary transition-colors duration-300 relative group">
-                  Help Center
-                  <span className="absolute inset-x-0 -bottom-1 h-0.5 bg-primary scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
-                </a>
-              </li>
-              <li>
-                <a href="#" className="font-opensans text-gray-300 hover:text-primary transition-colors duration-300 relative group">
-                  API Documentation
-                  <span className="absolute inset-x-0 -bottom-1 h-0.5 bg-primary scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
-                </a>
-              </li>
-              <li>
-                <a href="#" className="font-opensans text-gray-300 hover:text-primary transition-colors duration-300 relative group">
-                  Video Tutorials
-                  <span className="absolute inset-x-0 -bottom-1 h-0.5 bg-primary scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
-                </a>
-              </li>
-              <li>
-                <a href="#" className="font-opensans text-gray-300 hover:text-primary transition-colors duration-300 relative group">
-                  Community Forum
-                  <span className="absolute inset-x-0 -bottom-1 h-0.5 bg-primary scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
-                </a>
-              </li>
+              {supportLinks.map((link) => (
+                <li key={link.name}>
+                  <button
+                    onClick={() => scrollToSection('#contact')}
+                    className="font-opensans text-gray-300 hover:text-primary transition-colors duration-300 relative group"
+                  >
+                    {link.name}
+                    <span className="absolute inset-x-0 -bottom-1 h-0.5 bg-primary scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+                  </button>
+                </li>
+              ))}
               <li>
                 <button
                   onClick={() => scrollToSection('#contact')}
@@ -124,7 +117,7 @@ const Footer = () => {
               </a>
             </div>
             <div className="font-opensans text-gray-500 text-sm">
-              © 2024 Adberg.ai. All rights reserved.
+              © 2024 medianode.ai. All rights reserved.
             </div>
           </div>
         </div>

@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Menu, X, Play, User, LogOut } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useAuth } from '@/contexts/AuthContext';
-import { AuthModal } from '@/components/auth/AuthModal';
+
 import { useNavigate, useLocation } from 'react-router-dom';
 import {
   DropdownMenu,
@@ -14,29 +14,33 @@ import {
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [authModalOpen, setAuthModalOpen] = useState(false);
-  const [authModalTab, setAuthModalTab] = useState<'login' | 'signup'>('login');
+
   const { user, signOut } = useAuth();
   const navigate = useNavigate();
   const location = useLocation();
 
   const navItems = [
-    { name: 'Features', href: '#features' },
-    { name: 'Ad Showcase', href: '#ad-showcase' },
-    { name: 'Pricing', href: '#pricing' },
+    { name: 'AI Image Studio', href: '/image-studio' },
+    { name: 'Video Ad Service', href: '/video-service' },
+    { name: 'Pricing', href: '/pricing' },
+    { name: 'Contact', href: '/contact' },
   ];
 
-  const scrollToSection = (href: string) => {
-    const element = document.querySelector(href);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+  const handleNavClick = (href: string) => {
+    if (href.startsWith('/')) {
+      navigate(href);
+    } else {
+      const element = document.querySelector(href);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
     }
     setIsMenuOpen(false);
   };
 
-  const handleAuthAction = (action: 'login' | 'signup') => {
-    setAuthModalTab(action);
-    setAuthModalOpen(true);
+  const handleGetStarted = () => {
+    navigate('/contact');
+    setIsMenuOpen(false);
   };
 
   const handleSignOut = async () => {
@@ -59,16 +63,16 @@ const Navigation = () => {
               <Play className="w-6 h-6 text-white" />
             </div>
             <span className="font-montserrat font-bold text-2xl text-white tracking-tight">
-              adberg.ai
+              medianode.ai
             </span>
           </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-10">
-            {!isOnDashboard && navItems.map((item, index) => (
+            {navItems.map((item, index) => (
               <button
                 key={item.name}
-                onClick={() => scrollToSection(item.href)}
+                onClick={() => handleNavClick(item.href)}
                 className="font-opensans text-gray-300 hover:text-primary transition-all duration-300 relative group animate-slide-in-left text-lg font-medium"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
@@ -76,15 +80,6 @@ const Navigation = () => {
                 <span className="absolute inset-x-0 -bottom-2 h-0.5 bg-gradient-to-r from-primary to-accent scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left rounded-full"></span>
               </button>
             ))}
-            {isOnDashboard && (
-              <button
-                onClick={() => navigate('/')}
-                className="font-opensans text-gray-300 hover:text-primary transition-all duration-300 relative group text-lg font-medium"
-              >
-                Home
-                <span className="absolute inset-x-0 -bottom-2 h-0.5 bg-gradient-to-r from-primary to-accent scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left rounded-full"></span>
-              </button>
-            )}
           </div>
 
           {/* Auth Section */}
@@ -117,12 +112,21 @@ const Navigation = () => {
                 </DropdownMenuContent>
               </DropdownMenu>
             ) : (
-              <Button
-                onClick={() => handleAuthAction('signup')}
-                className="bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 text-white font-opensans font-semibold px-6 py-2 rounded-2xl transition-all duration-300 transform hover:scale-105"
-              >
-                Get Started
-              </Button>
+              <div className="flex items-center gap-3">
+                <Button
+                  onClick={() => window.location.href = '/auth'}
+                  variant="outline"
+                  className="border-white/30 text-white hover:bg-white/10 font-opensans font-semibold px-4 py-2 rounded-2xl transition-all duration-300"
+                >
+                  Sign In
+                </Button>
+                <Button
+                  onClick={handleGetStarted}
+                  className="bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 text-white font-opensans font-semibold px-6 py-2 rounded-2xl transition-all duration-300 transform hover:scale-105"
+                >
+                  Get Started
+                </Button>
+              </div>
             )}
           </div>
 
@@ -142,23 +146,15 @@ const Navigation = () => {
       {isMenuOpen && (
         <div className="md:hidden bg-black/95 backdrop-blur-xl border-t border-gray-800/30 animate-fade-in">
           <div className="px-4 pt-4 pb-6 space-y-4">
-            {!isOnDashboard && navItems.map((item) => (
+            {navItems.map((item) => (
               <button
                 key={item.name}
-                onClick={() => scrollToSection(item.href)}
+                onClick={() => handleNavClick(item.href)}
                 className="block w-full text-left px-4 py-3 text-gray-300 hover:text-primary font-opensans transition-colors duration-300 text-lg rounded-2xl hover:bg-black/70 border border-transparent hover:border-gray-800/50"
               >
                 {item.name}
               </button>
             ))}
-            {isOnDashboard && (
-              <button
-                onClick={() => navigate('/')}
-                className="block w-full text-left px-4 py-3 text-gray-300 hover:text-primary font-opensans transition-colors duration-300 text-lg rounded-2xl hover:bg-black/70 border border-transparent hover:border-gray-800/50"
-              >
-                Home
-              </button>
-            )}
 
             {/* Mobile Auth Section */}
             <div className="px-4 pt-2 space-y-3">
@@ -180,24 +176,28 @@ const Navigation = () => {
                   </Button>
                 </>
               ) : (
-                <Button
-                  onClick={() => handleAuthAction('signup')}
-                  className="w-full bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 text-white font-opensans font-semibold py-3 rounded-2xl transition-all duration-300"
-                >
-                  Get Started
-                </Button>
+                <div className="space-y-3">
+                  <Button
+                    onClick={() => window.location.href = '/auth'}
+                    variant="outline"
+                    className="w-full border-white/30 text-white hover:bg-white/10 font-opensans font-semibold py-3 rounded-2xl transition-all duration-300"
+                  >
+                    Sign In
+                  </Button>
+                  <Button
+                    onClick={handleGetStarted}
+                    className="w-full bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 text-white font-opensans font-semibold py-3 rounded-2xl transition-all duration-300"
+                  >
+                    Get Started
+                  </Button>
+                </div>
               )}
             </div>
           </div>
         </div>
       )}
 
-      {/* Auth Modal */}
-      <AuthModal
-        isOpen={authModalOpen}
-        onClose={() => setAuthModalOpen(false)}
-        defaultTab={authModalTab}
-      />
+
     </nav>
   );
 };
