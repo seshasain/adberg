@@ -1,0 +1,500 @@
+2025-06-27  09:31:26.219 | info | sob58sx85bay3w | --- Starting Serverless Worker |  Version 1.7.12 ---\n
+2025-06-27  09:31:26.219 | info | sob58sx85bay3w | Handler imported successfully\n
+2025-06-27  09:31:26.219 | info | sob58sx85bay3w | Could not find the extra_model_paths config file.\n
+2025-06-27  09:31:26.219 | info | sob58sx85bay3w | Could not import load_extra_path_config from main.py. Looking in utils.extra_config instead.\n
+2025-06-27  09:31:26.219 | info | sob58sx85bay3w | [DONE] Security scan\n
+2025-06-27  09:31:25.258 | info | sob58sx85bay3w | [START] Security scan\n
+2025-06-27  09:31:25.258 | info | sob58sx85bay3w | Using pytorch attention\n
+2025-06-27  09:31:21.533 | info | vpxt3onu8wkava | --- Starting Serverless Worker |  Version 1.7.12 ---\n
+2025-06-27  09:31:21.533 | info | vpxt3onu8wkava | Handler imported successfully\n
+2025-06-27  09:31:21.533 | info | vpxt3onu8wkava | Could not find the extra_model_paths config file.\n
+2025-06-27  09:31:21.533 | info | vpxt3onu8wkava | Could not import load_extra_path_config from main.py. Looking in utils.extra_config instead.\n
+2025-06-27  09:31:21.533 | info | vpxt3onu8wkava | [DONE] Security scan\n
+2025-06-27  09:31:21.401 | info | sob58sx85bay3w | attention.py        :588  2025-06-27 04:01:21,400 Using pytorch attention\n
+2025-06-27  09:31:21.401 | info | sob58sx85bay3w | Device: cuda:0 NVIDIA GeForce RTX 4090 : native\n
+2025-06-27  09:31:21.401 | info | sob58sx85bay3w | model_management.py :392  2025-06-27 04:01:16,453 Device: cuda:0 NVIDIA GeForce RTX 4090 : native\n
+2025-06-27  09:31:21.401 | info | sob58sx85bay3w | Set vram state to: NORMAL_VRAM\n
+2025-06-27  09:31:21.401 | info | sob58sx85bay3w | model_management.py :365  2025-06-27 04:01:16,453 Set vram state to: NORMAL_VRAM\n
+2025-06-27  09:31:21.401 | info | sob58sx85bay3w | pytorch version: 2.5.1+cu121\n
+2025-06-27  09:31:21.401 | info | sob58sx85bay3w | model_management.py :226  2025-06-27 04:01:16,452 pytorch version: 2.5.1+cu121\n
+2025-06-27  09:31:21.401 | info | sob58sx85bay3w | Total VRAM 24210 MB, total RAM 257554 MB\n
+2025-06-27  09:31:20.519 | info | vpxt3onu8wkava | [START] Security scan\n
+2025-06-27  09:31:20.519 | info | vpxt3onu8wkava | Using pytorch attention\n
+2025-06-27  09:31:16.452 | info | sob58sx85bay3w | model_management.py :223  2025-06-27 04:01:16,451 Total VRAM 24210 MB, total RAM 257554 MB\n
+2025-06-27  09:31:16.452 | info | sob58sx85bay3w | Checkpoint files will always be loaded safely.\n
+2025-06-27  09:31:16.452 | info | sob58sx85bay3w | utils.py            :48   2025-06-27 04:01:16,261 Checkpoint files will always be loaded safely.\n
+2025-06-27  09:31:16.452 | info | sob58sx85bay3w | \n
+2025-06-27  09:31:16.452 | info | sob58sx85bay3w | main.py             :95   2025-06-27 04:01:16,191 \n
+2025-06-27  09:31:16.452 | info | sob58sx85bay3w |    4.3 seconds (PRESTARTUP FAILED): /runpod-volume/ComfyUI/custom_nodes/ComfyUI-Manager\n
+2025-06-27  09:31:16.452 | info | sob58sx85bay3w | main.py             :94   2025-06-27 04:01:16,191    4.3 seconds (PRESTARTUP FAILED): /runpod-volume/ComfyUI/custom_nodes/ComfyUI-Manager\n
+2025-06-27  09:31:16.452 | info | sob58sx85bay3w |    0.0 seconds: /runpod-volume/ComfyUI/custom_nodes/rgthree-comfy\n
+2025-06-27  09:31:16.452 | info | sob58sx85bay3w | main.py             :94   2025-06-27 04:01:16,191    0.0 seconds: /runpod-volume/ComfyUI/custom_nodes/rgthree-comfy\n
+2025-06-27  09:31:16.452 | info | sob58sx85bay3w | Prestartup times for custom nodes:\n
+2025-06-27  09:31:16.452 | info | sob58sx85bay3w | \n
+2025-06-27  09:31:16.452 | info | sob58sx85bay3w | Prestartup times for custom nodes:\n
+2025-06-27  09:31:16.452 | info | sob58sx85bay3w | main.py             :88   2025-06-27 04:01:16,191 \n
+2025-06-27  09:31:16.452 | info | sob58sx85bay3w | Failed to execute startup-script: /runpod-volume/ComfyUI/custom_nodes/ComfyUI-Manager/prestartup_script.py / module '__main__' has no attribute '__file__'\n
+2025-06-27  09:31:16.192 | info | sob58sx85bay3w | main.py             :66   2025-06-27 04:01:16,190 Failed to execute startup-script: /runpod-volume/ComfyUI/custom_nodes/ComfyUI-Manager/prestartup_script.py / module '__main__' has no attribute '__file__'\n
+2025-06-27  09:31:16.192 | info | sob58sx85bay3w | '/runpod-volume/ComfyUI' added to sys.path\n
+2025-06-27  09:31:16.192 | info | sob58sx85bay3w | ComfyUI found: /runpod-volume/ComfyUI\n
+2025-06-27  09:31:16.192 | info | sob58sx85bay3w | Starting serverless handler with direct import...\n
+2025-06-27  09:31:16.192 | info | sob58sx85bay3w | RunPod version: 1.7.12\n
+2025-06-27  09:31:15.896 | info | vpxt3onu8wkava | attention.py        :588  2025-06-27 04:01:15,895 Using pytorch attention\n
+2025-06-27  09:31:15.895 | info | vpxt3onu8wkava | Device: cuda:0 NVIDIA GeForce RTX 4090 : native\n
+2025-06-27  09:31:15.895 | info | vpxt3onu8wkava | model_management.py :392  2025-06-27 04:01:10,796 Device: cuda:0 NVIDIA GeForce RTX 4090 : native\n
+2025-06-27  09:31:15.895 | info | vpxt3onu8wkava | Set vram state to: NORMAL_VRAM\n
+2025-06-27  09:31:15.895 | info | vpxt3onu8wkava | model_management.py :365  2025-06-27 04:01:10,795 Set vram state to: NORMAL_VRAM\n
+2025-06-27  09:31:15.895 | info | vpxt3onu8wkava | pytorch version: 2.5.1+cu121\n
+2025-06-27  09:31:15.895 | info | vpxt3onu8wkava | model_management.py :226  2025-06-27 04:01:10,794 pytorch version: 2.5.1+cu121\n
+2025-06-27  09:31:15.895 | info | vpxt3onu8wkava | Total VRAM 24210 MB, total RAM 257554 MB\n
+2025-06-27  09:31:10.795 | info | vpxt3onu8wkava | model_management.py :223  2025-06-27 04:01:10,794 Total VRAM 24210 MB, total RAM 257554 MB\n
+2025-06-27  09:31:10.795 | info | vpxt3onu8wkava | Checkpoint files will always be loaded safely.\n
+2025-06-27  09:31:10.795 | info | vpxt3onu8wkava | utils.py            :48   2025-06-27 04:01:10,612 Checkpoint files will always be loaded safely.\n
+2025-06-27  09:31:10.795 | info | vpxt3onu8wkava | \n
+2025-06-27  09:31:10.795 | info | vpxt3onu8wkava | main.py             :95   2025-06-27 04:01:10,539 \n
+2025-06-27  09:31:10.795 | info | vpxt3onu8wkava |    4.9 seconds (PRESTARTUP FAILED): /runpod-volume/ComfyUI/custom_nodes/ComfyUI-Manager\n
+2025-06-27  09:31:10.795 | info | vpxt3onu8wkava | main.py             :94   2025-06-27 04:01:10,539    4.9 seconds (PRESTARTUP FAILED): /runpod-volume/ComfyUI/custom_nodes/ComfyUI-Manager\n
+2025-06-27  09:31:10.795 | info | vpxt3onu8wkava |    0.0 seconds: /runpod-volume/ComfyUI/custom_nodes/rgthree-comfy\n
+2025-06-27  09:31:10.795 | info | vpxt3onu8wkava | main.py             :94   2025-06-27 04:01:10,539    0.0 seconds: /runpod-volume/ComfyUI/custom_nodes/rgthree-comfy\n
+2025-06-27  09:31:10.795 | info | vpxt3onu8wkava | Prestartup times for custom nodes:\n
+2025-06-27  09:31:10.795 | info | vpxt3onu8wkava | \n
+2025-06-27  09:31:10.795 | info | vpxt3onu8wkava | Prestartup times for custom nodes:\n
+2025-06-27  09:31:10.795 | info | vpxt3onu8wkava | main.py             :88   2025-06-27 04:01:10,539 \n
+2025-06-27  09:31:10.795 | info | vpxt3onu8wkava | Failed to execute startup-script: /runpod-volume/ComfyUI/custom_nodes/ComfyUI-Manager/prestartup_script.py / module '__main__' has no attribute '__file__'\n
+2025-06-27  09:31:10.539 | info | vpxt3onu8wkava | main.py             :66   2025-06-27 04:01:10,538 Failed to execute startup-script: /runpod-volume/ComfyUI/custom_nodes/ComfyUI-Manager/prestartup_script.py / module '__main__' has no attribute '__file__'\n
+2025-06-27  09:31:10.539 | info | vpxt3onu8wkava | '/runpod-volume/ComfyUI' added to sys.path\n
+2025-06-27  09:31:10.539 | info | vpxt3onu8wkava | ComfyUI found: /runpod-volume/ComfyUI\n
+2025-06-27  09:31:10.539 | info | vpxt3onu8wkava | Starting serverless handler with direct import...\n
+2025-06-27  09:31:10.539 | info | vpxt3onu8wkava | RunPod version: 1.7.12\n
+2025-06-27  09:31:05.808 | info | dm1bz7o5a891l2 | --- Starting Serverless Worker |  Version 1.7.12 ---\n
+2025-06-27  09:31:05.808 | info | dm1bz7o5a891l2 | Handler imported successfully\n
+2025-06-27  09:31:05.808 | info | dm1bz7o5a891l2 | Could not find the extra_model_paths config file.\n
+2025-06-27  09:31:05.808 | info | dm1bz7o5a891l2 | Could not import load_extra_path_config from main.py. Looking in utils.extra_config instead.\n
+2025-06-27  09:31:05.808 | info | dm1bz7o5a891l2 | [DONE] Security scan\n
+2025-06-27  09:31:04.931 | info | dm1bz7o5a891l2 | [START] Security scan\n
+2025-06-27  09:31:04.931 | info | dm1bz7o5a891l2 | Using pytorch attention\n
+2025-06-27  09:31:01.107 | info | dm1bz7o5a891l2 | attention.py        :588  2025-06-27 04:01:01,106 Using pytorch attention\n
+2025-06-27  09:31:01.107 | info | dm1bz7o5a891l2 | Device: cuda:0 NVIDIA GeForce RTX 4090 : native\n
+2025-06-27  09:31:01.107 | info | dm1bz7o5a891l2 | model_management.py :392  2025-06-27 04:00:56,277 Device: cuda:0 NVIDIA GeForce RTX 4090 : native\n
+2025-06-27  09:31:01.107 | info | dm1bz7o5a891l2 | Set vram state to: NORMAL_VRAM\n
+2025-06-27  09:31:01.107 | info | dm1bz7o5a891l2 | model_management.py :365  2025-06-27 04:00:56,277 Set vram state to: NORMAL_VRAM\n
+2025-06-27  09:31:01.107 | info | dm1bz7o5a891l2 | pytorch version: 2.5.1+cu121\n
+2025-06-27  09:31:01.107 | info | dm1bz7o5a891l2 | model_management.py :226  2025-06-27 04:00:56,276 pytorch version: 2.5.1+cu121\n
+2025-06-27  09:31:01.107 | info | dm1bz7o5a891l2 | Total VRAM 24210 MB, total RAM 257554 MB\n
+2025-06-27  09:30:56.276 | info | dm1bz7o5a891l2 | model_management.py :223  2025-06-27 04:00:56,276 Total VRAM 24210 MB, total RAM 257554 MB\n
+2025-06-27  09:30:56.276 | info | dm1bz7o5a891l2 | Checkpoint files will always be loaded safely.\n
+2025-06-27  09:30:56.276 | info | dm1bz7o5a891l2 | utils.py            :48   2025-06-27 04:00:56,108 Checkpoint files will always be loaded safely.\n
+2025-06-27  09:30:56.276 | info | dm1bz7o5a891l2 | \n
+2025-06-27  09:30:56.276 | info | dm1bz7o5a891l2 | main.py             :95   2025-06-27 04:00:56,044 \n
+2025-06-27  09:30:56.276 | info | dm1bz7o5a891l2 |    4.6 seconds (PRESTARTUP FAILED): /runpod-volume/ComfyUI/custom_nodes/ComfyUI-Manager\n
+2025-06-27  09:30:56.276 | info | dm1bz7o5a891l2 | main.py             :94   2025-06-27 04:00:56,044    4.6 seconds (PRESTARTUP FAILED): /runpod-volume/ComfyUI/custom_nodes/ComfyUI-Manager\n
+2025-06-27  09:30:56.276 | info | dm1bz7o5a891l2 |    0.0 seconds: /runpod-volume/ComfyUI/custom_nodes/rgthree-comfy\n
+2025-06-27  09:30:56.276 | info | dm1bz7o5a891l2 | main.py             :94   2025-06-27 04:00:56,044    0.0 seconds: /runpod-volume/ComfyUI/custom_nodes/rgthree-comfy\n
+2025-06-27  09:30:56.276 | info | dm1bz7o5a891l2 | Prestartup times for custom nodes:\n
+2025-06-27  09:30:56.276 | info | dm1bz7o5a891l2 | \n
+2025-06-27  09:30:56.276 | info | dm1bz7o5a891l2 | Prestartup times for custom nodes:\n
+2025-06-27  09:30:56.276 | info | dm1bz7o5a891l2 | main.py             :88   2025-06-27 04:00:56,044 \n
+2025-06-27  09:30:56.276 | info | dm1bz7o5a891l2 | Failed to execute startup-script: /runpod-volume/ComfyUI/custom_nodes/ComfyUI-Manager/prestartup_script.py / module '__main__' has no attribute '__file__'\n
+2025-06-27  09:30:56.044 | info | dm1bz7o5a891l2 | main.py             :66   2025-06-27 04:00:56,044 Failed to execute startup-script: /runpod-volume/ComfyUI/custom_nodes/ComfyUI-Manager/prestartup_script.py / module '__main__' has no attribute '__file__'\n
+2025-06-27  09:30:56.044 | info | dm1bz7o5a891l2 | '/runpod-volume/ComfyUI' added to sys.path\n
+2025-06-27  09:30:56.044 | info | dm1bz7o5a891l2 | ComfyUI found: /runpod-volume/ComfyUI\n
+2025-06-27  09:30:56.044 | info | dm1bz7o5a891l2 | Starting serverless handler with direct import...\n
+2025-06-27  09:30:56.044 | info | dm1bz7o5a891l2 | RunPod version: 1.7.12\n
+2025-06-27  09:30:45.064 | info | vpxt3onu8wkava | --- Starting Serverless Worker |  Version 1.7.12 ---\n
+2025-06-27  09:30:45.063 | info | vpxt3onu8wkava | Handler imported successfully\n
+2025-06-27  09:30:45.063 | info | vpxt3onu8wkava | Could not find the extra_model_paths config file.\n
+2025-06-27  09:30:45.063 | info | vpxt3onu8wkava | Could not import load_extra_path_config from main.py. Looking in utils.extra_config instead.\n
+2025-06-27  09:30:45.063 | info | vpxt3onu8wkava | [DONE] Security scan\n
+2025-06-27  09:30:44.092 | info | vpxt3onu8wkava | [START] Security scan\n
+2025-06-27  09:30:44.092 | info | vpxt3onu8wkava | Using pytorch attention\n
+2025-06-27  09:30:39.505 | info | vpxt3onu8wkava | attention.py        :588  2025-06-27 04:00:39,504 Using pytorch attention\n
+2025-06-27  09:30:39.505 | info | vpxt3onu8wkava | Device: cuda:0 NVIDIA GeForce RTX 4090 : native\n
+2025-06-27  09:30:39.505 | info | vpxt3onu8wkava | model_management.py :392  2025-06-27 04:00:35,188 Device: cuda:0 NVIDIA GeForce RTX 4090 : native\n
+2025-06-27  09:30:39.505 | info | vpxt3onu8wkava | Set vram state to: NORMAL_VRAM\n
+2025-06-27  09:30:39.505 | info | vpxt3onu8wkava | model_management.py :365  2025-06-27 04:00:35,188 Set vram state to: NORMAL_VRAM\n
+2025-06-27  09:30:39.505 | info | vpxt3onu8wkava | pytorch version: 2.5.1+cu121\n
+2025-06-27  09:30:39.505 | info | vpxt3onu8wkava | model_management.py :226  2025-06-27 04:00:35,187 pytorch version: 2.5.1+cu121\n
+2025-06-27  09:30:39.505 | info | vpxt3onu8wkava | Total VRAM 24210 MB, total RAM 257554 MB\n
+2025-06-27  09:30:35.188 | info | vpxt3onu8wkava | model_management.py :223  2025-06-27 04:00:35,187 Total VRAM 24210 MB, total RAM 257554 MB\n
+2025-06-27  09:30:35.188 | info | vpxt3onu8wkava | Checkpoint files will always be loaded safely.\n
+2025-06-27  09:30:35.188 | info | vpxt3onu8wkava | utils.py            :48   2025-06-27 04:00:35,016 Checkpoint files will always be loaded safely.\n
+2025-06-27  09:30:35.188 | info | vpxt3onu8wkava | \n
+2025-06-27  09:30:35.188 | info | vpxt3onu8wkava | main.py             :95   2025-06-27 04:00:34,965 \n
+2025-06-27  09:30:35.188 | info | vpxt3onu8wkava |    4.6 seconds (PRESTARTUP FAILED): /runpod-volume/ComfyUI/custom_nodes/ComfyUI-Manager\n
+2025-06-27  09:30:35.188 | info | vpxt3onu8wkava | main.py             :94   2025-06-27 04:00:34,965    4.6 seconds (PRESTARTUP FAILED): /runpod-volume/ComfyUI/custom_nodes/ComfyUI-Manager\n
+2025-06-27  09:30:35.188 | info | vpxt3onu8wkava |    0.0 seconds: /runpod-volume/ComfyUI/custom_nodes/rgthree-comfy\n
+2025-06-27  09:30:35.188 | info | vpxt3onu8wkava | main.py             :94   2025-06-27 04:00:34,965    0.0 seconds: /runpod-volume/ComfyUI/custom_nodes/rgthree-comfy\n
+2025-06-27  09:30:35.188 | info | vpxt3onu8wkava | Prestartup times for custom nodes:\n
+2025-06-27  09:30:35.188 | info | vpxt3onu8wkava | \n
+2025-06-27  09:30:35.188 | info | vpxt3onu8wkava | Prestartup times for custom nodes:\n
+2025-06-27  09:30:35.188 | info | vpxt3onu8wkava | main.py             :88   2025-06-27 04:00:34,965 \n
+2025-06-27  09:30:35.188 | info | vpxt3onu8wkava | Failed to execute startup-script: /runpod-volume/ComfyUI/custom_nodes/ComfyUI-Manager/prestartup_script.py / module '__main__' has no attribute '__file__'\n
+2025-06-27  09:30:34.965 | info | vpxt3onu8wkava | main.py             :66   2025-06-27 04:00:34,964 Failed to execute startup-script: /runpod-volume/ComfyUI/custom_nodes/ComfyUI-Manager/prestartup_script.py / module '__main__' has no attribute '__file__'\n
+2025-06-27  09:30:34.965 | info | vpxt3onu8wkava | '/runpod-volume/ComfyUI' added to sys.path\n
+2025-06-27  09:30:34.965 | info | vpxt3onu8wkava | ComfyUI found: /runpod-volume/ComfyUI\n
+2025-06-27  09:30:34.965 | info | vpxt3onu8wkava | Starting serverless handler with direct import...\n
+2025-06-27  09:30:34.965 | info | vpxt3onu8wkava | RunPod version: 1.7.12\n
+2025-06-27  09:30:29.252 | info | b5k73t2on2n1ex | --- Starting Serverless Worker |  Version 1.7.12 ---\n
+2025-06-27  09:30:29.252 | info | b5k73t2on2n1ex | Handler imported successfully\n
+2025-06-27  09:30:29.252 | info | b5k73t2on2n1ex | Could not find the extra_model_paths config file.\n
+2025-06-27  09:30:29.252 | info | b5k73t2on2n1ex | Could not import load_extra_path_config from main.py. Looking in utils.extra_config instead.\n
+2025-06-27  09:30:29.251 | info | b5k73t2on2n1ex | [DONE] Security scan\n
+2025-06-27  09:30:26.927 | info | b5k73t2on2n1ex | [START] Security scan\n
+2025-06-27  09:30:26.926 | info | b5k73t2on2n1ex | Using pytorch attention\n
+2025-06-27  09:30:23.515 | info | dm1bz7o5a891l2 | --- Starting Serverless Worker |  Version 1.7.12 ---\n
+2025-06-27  09:30:23.515 | info | dm1bz7o5a891l2 | Handler imported successfully\n
+2025-06-27  09:30:23.515 | info | dm1bz7o5a891l2 | Could not find the extra_model_paths config file.\n
+2025-06-27  09:30:23.515 | info | dm1bz7o5a891l2 | Could not import load_extra_path_config from main.py. Looking in utils.extra_config instead.\n
+2025-06-27  09:30:23.515 | info | dm1bz7o5a891l2 | [DONE] Security scan\n
+2025-06-27  09:30:22.637 | info | dm1bz7o5a891l2 | [START] Security scan\n
+2025-06-27  09:30:22.637 | info | dm1bz7o5a891l2 | Using pytorch attention\n
+2025-06-27  09:30:18.689 | info | dm1bz7o5a891l2 | attention.py        :588  2025-06-27 04:00:18,689 Using pytorch attention\n
+2025-06-27  09:30:18.689 | info | dm1bz7o5a891l2 | Device: cuda:0 NVIDIA GeForce RTX 4090 : native\n
+2025-06-27  09:30:18.689 | info | dm1bz7o5a891l2 | model_management.py :392  2025-06-27 04:00:14,309 Device: cuda:0 NVIDIA GeForce RTX 4090 : native\n
+2025-06-27  09:30:18.689 | info | dm1bz7o5a891l2 | Set vram state to: NORMAL_VRAM\n
+2025-06-27  09:30:18.689 | info | dm1bz7o5a891l2 | model_management.py :365  2025-06-27 04:00:14,309 Set vram state to: NORMAL_VRAM\n
+2025-06-27  09:30:18.689 | info | dm1bz7o5a891l2 | pytorch version: 2.5.1+cu121\n
+2025-06-27  09:30:18.689 | info | dm1bz7o5a891l2 | model_management.py :226  2025-06-27 04:00:14,308 pytorch version: 2.5.1+cu121\n
+2025-06-27  09:30:18.689 | info | dm1bz7o5a891l2 | Total VRAM 24210 MB, total RAM 257554 MB\n
+2025-06-27  09:30:14.308 | info | dm1bz7o5a891l2 | model_management.py :223  2025-06-27 04:00:14,308 Total VRAM 24210 MB, total RAM 257554 MB\n
+2025-06-27  09:30:14.308 | info | dm1bz7o5a891l2 | Checkpoint files will always be loaded safely.\n
+2025-06-27  09:30:14.308 | info | dm1bz7o5a891l2 | utils.py            :48   2025-06-27 04:00:14,145 Checkpoint files will always be loaded safely.\n
+2025-06-27  09:30:14.308 | info | dm1bz7o5a891l2 | \n
+2025-06-27  09:30:14.308 | info | dm1bz7o5a891l2 | main.py             :95   2025-06-27 04:00:14,087 \n
+2025-06-27  09:30:14.308 | info | dm1bz7o5a891l2 |    3.8 seconds (PRESTARTUP FAILED): /runpod-volume/ComfyUI/custom_nodes/ComfyUI-Manager\n
+2025-06-27  09:30:14.308 | info | dm1bz7o5a891l2 | main.py             :94   2025-06-27 04:00:14,087    3.8 seconds (PRESTARTUP FAILED): /runpod-volume/ComfyUI/custom_nodes/ComfyUI-Manager\n
+2025-06-27  09:30:14.308 | info | dm1bz7o5a891l2 |    0.0 seconds: /runpod-volume/ComfyUI/custom_nodes/rgthree-comfy\n
+2025-06-27  09:30:14.308 | info | dm1bz7o5a891l2 | main.py             :94   2025-06-27 04:00:14,087    0.0 seconds: /runpod-volume/ComfyUI/custom_nodes/rgthree-comfy\n
+2025-06-27  09:30:14.308 | info | dm1bz7o5a891l2 | Prestartup times for custom nodes:\n
+2025-06-27  09:30:14.308 | info | dm1bz7o5a891l2 | \n
+2025-06-27  09:30:14.308 | info | dm1bz7o5a891l2 | Prestartup times for custom nodes:\n
+2025-06-27  09:30:14.308 | info | dm1bz7o5a891l2 | main.py             :88   2025-06-27 04:00:14,087 \n
+2025-06-27  09:30:14.308 | info | dm1bz7o5a891l2 | Failed to execute startup-script: /runpod-volume/ComfyUI/custom_nodes/ComfyUI-Manager/prestartup_script.py / module '__main__' has no attribute '__file__'\n
+2025-06-27  09:30:14.087 | info | dm1bz7o5a891l2 | main.py             :66   2025-06-27 04:00:14,087 Failed to execute startup-script: /runpod-volume/ComfyUI/custom_nodes/ComfyUI-Manager/prestartup_script.py / module '__main__' has no attribute '__file__'\n
+2025-06-27  09:30:14.087 | info | dm1bz7o5a891l2 | '/runpod-volume/ComfyUI' added to sys.path\n
+2025-06-27  09:30:14.087 | info | dm1bz7o5a891l2 | ComfyUI found: /runpod-volume/ComfyUI\n
+2025-06-27  09:30:14.087 | info | dm1bz7o5a891l2 | Starting serverless handler with direct import...\n
+2025-06-27  09:30:14.087 | info | dm1bz7o5a891l2 | RunPod version: 1.7.12\n
+2025-06-27  09:30:08.134 | info | vpxt3onu8wkava | --- Starting Serverless Worker |  Version 1.7.12 ---\n
+2025-06-27  09:30:08.134 | info | vpxt3onu8wkava | Handler imported successfully\n
+2025-06-27  09:30:08.134 | info | vpxt3onu8wkava | Could not find the extra_model_paths config file.\n
+2025-06-27  09:30:08.134 | info | vpxt3onu8wkava | Could not import load_extra_path_config from main.py. Looking in utils.extra_config instead.\n
+2025-06-27  09:30:08.134 | info | vpxt3onu8wkava | [DONE] Security scan\n
+2025-06-27  09:30:07.125 | info | vpxt3onu8wkava | [START] Security scan\n
+2025-06-27  09:30:07.125 | info | vpxt3onu8wkava | Using pytorch attention\n
+2025-06-27  09:30:06.070 | info | b5k73t2on2n1ex | attention.py        :588  2025-06-27 04:00:06,067 Using pytorch attention\n
+2025-06-27  09:30:06.070 | info | b5k73t2on2n1ex | Device: cuda:0 NVIDIA GeForce RTX 4090 : native\n
+2025-06-27  09:30:06.070 | info | b5k73t2on2n1ex | model_management.py :392  2025-06-27 03:59:42,770 Device: cuda:0 NVIDIA GeForce RTX 4090 : native\n
+2025-06-27  09:30:06.070 | info | b5k73t2on2n1ex | Set vram state to: NORMAL_VRAM\n
+2025-06-27  09:30:06.070 | info | b5k73t2on2n1ex | model_management.py :365  2025-06-27 03:59:42,768 Set vram state to: NORMAL_VRAM\n
+2025-06-27  09:30:06.070 | info | b5k73t2on2n1ex | pytorch version: 2.5.1+cu121\n
+2025-06-27  09:30:06.070 | info | b5k73t2on2n1ex | model_management.py :226  2025-06-27 03:59:42,759 pytorch version: 2.5.1+cu121\n
+2025-06-27  09:30:06.069 | info | b5k73t2on2n1ex | Total VRAM 24210 MB, total RAM 257554 MB\n
+2025-06-27  09:30:02.843 | info | vpxt3onu8wkava | attention.py        :588  2025-06-27 04:00:02,843 Using pytorch attention\n
+2025-06-27  09:30:02.843 | info | vpxt3onu8wkava | Device: cuda:0 NVIDIA GeForce RTX 4090 : native\n
+2025-06-27  09:30:02.843 | info | vpxt3onu8wkava | model_management.py :392  2025-06-27 03:59:57,879 Device: cuda:0 NVIDIA GeForce RTX 4090 : native\n
+2025-06-27  09:30:02.843 | info | vpxt3onu8wkava | Set vram state to: NORMAL_VRAM\n
+2025-06-27  09:30:02.843 | info | vpxt3onu8wkava | model_management.py :365  2025-06-27 03:59:57,878 Set vram state to: NORMAL_VRAM\n
+2025-06-27  09:30:02.843 | info | vpxt3onu8wkava | pytorch version: 2.5.1+cu121\n
+2025-06-27  09:30:02.843 | info | vpxt3onu8wkava | model_management.py :226  2025-06-27 03:59:57,877 pytorch version: 2.5.1+cu121\n
+2025-06-27  09:30:02.843 | info | vpxt3onu8wkava | Total VRAM 24210 MB, total RAM 257554 MB\n
+2025-06-27  09:29:57.878 | info | vpxt3onu8wkava | model_management.py :223  2025-06-27 03:59:57,877 Total VRAM 24210 MB, total RAM 257554 MB\n
+2025-06-27  09:29:57.878 | info | vpxt3onu8wkava | Checkpoint files will always be loaded safely.\n
+2025-06-27  09:29:57.878 | info | vpxt3onu8wkava | utils.py            :48   2025-06-27 03:59:57,694 Checkpoint files will always be loaded safely.\n
+2025-06-27  09:29:57.878 | info | vpxt3onu8wkava | \n
+2025-06-27  09:29:57.878 | info | vpxt3onu8wkava | main.py             :95   2025-06-27 03:59:57,621 \n
+2025-06-27  09:29:57.878 | info | vpxt3onu8wkava |    5.1 seconds (PRESTARTUP FAILED): /runpod-volume/ComfyUI/custom_nodes/ComfyUI-Manager\n
+2025-06-27  09:29:57.878 | info | vpxt3onu8wkava | main.py             :94   2025-06-27 03:59:57,621    5.1 seconds (PRESTARTUP FAILED): /runpod-volume/ComfyUI/custom_nodes/ComfyUI-Manager\n
+2025-06-27  09:29:57.878 | info | vpxt3onu8wkava |    0.0 seconds: /runpod-volume/ComfyUI/custom_nodes/rgthree-comfy\n
+2025-06-27  09:29:57.878 | info | vpxt3onu8wkava | main.py             :94   2025-06-27 03:59:57,621    0.0 seconds: /runpod-volume/ComfyUI/custom_nodes/rgthree-comfy\n
+2025-06-27  09:29:57.878 | info | vpxt3onu8wkava | Prestartup times for custom nodes:\n
+2025-06-27  09:29:57.878 | info | vpxt3onu8wkava | \n
+2025-06-27  09:29:57.878 | info | vpxt3onu8wkava | Prestartup times for custom nodes:\n
+2025-06-27  09:29:57.878 | info | vpxt3onu8wkava | main.py             :88   2025-06-27 03:59:57,621 \n
+2025-06-27  09:29:57.877 | info | vpxt3onu8wkava | Failed to execute startup-script: /runpod-volume/ComfyUI/custom_nodes/ComfyUI-Manager/prestartup_script.py / module '__main__' has no attribute '__file__'\n
+2025-06-27  09:29:57.621 | info | vpxt3onu8wkava | main.py             :66   2025-06-27 03:59:57,621 Failed to execute startup-script: /runpod-volume/ComfyUI/custom_nodes/ComfyUI-Manager/prestartup_script.py / module '__main__' has no attribute '__file__'\n
+2025-06-27  09:29:57.621 | info | vpxt3onu8wkava | '/runpod-volume/ComfyUI' added to sys.path\n
+2025-06-27  09:29:52.463 | info | vpxt3onu8wkava | ComfyUI found: /runpod-volume/ComfyUI\n
+2025-06-27  09:29:52.463 | info | vpxt3onu8wkava | Starting serverless handler with direct import...\n
+2025-06-27  09:29:52.463 | info | vpxt3onu8wkava | RunPod version: 1.7.12\n
+2025-06-27  09:29:52.463 | info | vpxt3onu8wkava | Verifying RunPod SDK...\n
+2025-06-27  09:29:52.463 | info | vpxt3onu8wkava | ✅ Activating existing venv\n
+2025-06-27  09:29:52.463 | info | vpxt3onu8wkava | === STARTING RUNPOD SERVERLESS ===\n
+2025-06-27  09:29:42.761 | info | b5k73t2on2n1ex | model_management.py :223  2025-06-27 03:59:42,758 Total VRAM 24210 MB, total RAM 257554 MB\n
+2025-06-27  09:29:42.760 | info | b5k73t2on2n1ex | Checkpoint files will always be loaded safely.\n
+2025-06-27  09:29:41.787 | info | b5k73t2on2n1ex | utils.py            :48   2025-06-27 03:59:41,784 Checkpoint files will always be loaded safely.\n
+2025-06-27  09:29:41.787 | info | b5k73t2on2n1ex | \n
+2025-06-27  09:29:41.787 | info | b5k73t2on2n1ex | main.py             :95   2025-06-27 03:59:41,462 \n
+2025-06-27  09:29:41.787 | info | b5k73t2on2n1ex |   20.8 seconds (PRESTARTUP FAILED): /runpod-volume/ComfyUI/custom_nodes/ComfyUI-Manager\n
+2025-06-27  09:29:41.787 | info | b5k73t2on2n1ex | main.py             :94   2025-06-27 03:59:41,462   20.8 seconds (PRESTARTUP FAILED): /runpod-volume/ComfyUI/custom_nodes/ComfyUI-Manager\n
+2025-06-27  09:29:41.787 | info | b5k73t2on2n1ex |    0.0 seconds: /runpod-volume/ComfyUI/custom_nodes/rgthree-comfy\n
+2025-06-27  09:29:41.786 | info | b5k73t2on2n1ex | main.py             :94   2025-06-27 03:59:41,461    0.0 seconds: /runpod-volume/ComfyUI/custom_nodes/rgthree-comfy\n
+2025-06-27  09:29:41.786 | info | b5k73t2on2n1ex | Prestartup times for custom nodes:\n
+2025-06-27  09:29:41.786 | info | b5k73t2on2n1ex | \n
+2025-06-27  09:29:41.786 | info | b5k73t2on2n1ex | Prestartup times for custom nodes:\n
+2025-06-27  09:29:41.786 | info | b5k73t2on2n1ex | main.py             :88   2025-06-27 03:59:41,461 \n
+2025-06-27  09:29:41.786 | info | b5k73t2on2n1ex | Failed to execute startup-script: /runpod-volume/ComfyUI/custom_nodes/ComfyUI-Manager/prestartup_script.py / module '__main__' has no attribute '__file__'\n
+2025-06-27  09:29:41.463 | info | b5k73t2on2n1ex | main.py             :66   2025-06-27 03:59:41,460 Failed to execute startup-script: /runpod-volume/ComfyUI/custom_nodes/ComfyUI-Manager/prestartup_script.py / module '__main__' has no attribute '__file__'\n
+2025-06-27  09:29:41.462 | info | b5k73t2on2n1ex | '/runpod-volume/ComfyUI' added to sys.path\n
+2025-06-27  09:29:30.385 | info | vpxt3onu8wkava | --- Starting Serverless Worker |  Version 1.7.12 ---\n
+2025-06-27  09:29:30.385 | info | vpxt3onu8wkava | Handler imported successfully\n
+2025-06-27  09:29:30.385 | info | vpxt3onu8wkava | Could not find the extra_model_paths config file.\n
+2025-06-27  09:29:30.385 | info | vpxt3onu8wkava | Could not import load_extra_path_config from main.py. Looking in utils.extra_config instead.\n
+2025-06-27  09:29:30.385 | info | vpxt3onu8wkava | [DONE] Security scan\n
+2025-06-27  09:29:29.408 | info | vpxt3onu8wkava | [START] Security scan\n
+2025-06-27  09:29:29.408 | info | vpxt3onu8wkava | Using pytorch attention\n
+2025-06-27  09:29:24.534 | info | vpxt3onu8wkava | attention.py        :588  2025-06-27 03:59:24,534 Using pytorch attention\n
+2025-06-27  09:29:24.534 | info | vpxt3onu8wkava | Device: cuda:0 NVIDIA GeForce RTX 4090 : native\n
+2025-06-27  09:29:24.534 | info | vpxt3onu8wkava | model_management.py :392  2025-06-27 03:59:19,211 Device: cuda:0 NVIDIA GeForce RTX 4090 : native\n
+2025-06-27  09:29:24.534 | info | vpxt3onu8wkava | Set vram state to: NORMAL_VRAM\n
+2025-06-27  09:29:24.534 | info | vpxt3onu8wkava | model_management.py :365  2025-06-27 03:59:19,211 Set vram state to: NORMAL_VRAM\n
+2025-06-27  09:29:24.534 | info | vpxt3onu8wkava | pytorch version: 2.5.1+cu121\n
+2025-06-27  09:29:24.534 | info | vpxt3onu8wkava | model_management.py :226  2025-06-27 03:59:19,210 pytorch version: 2.5.1+cu121\n
+2025-06-27  09:29:24.534 | info | vpxt3onu8wkava | Total VRAM 24210 MB, total RAM 257554 MB\n
+2025-06-27  09:29:20.323 | info | b5k73t2on2n1ex | ComfyUI found: /runpod-volume/ComfyUI\n
+2025-06-27  09:29:19.211 | info | vpxt3onu8wkava | model_management.py :223  2025-06-27 03:59:19,210 Total VRAM 24210 MB, total RAM 257554 MB\n
+2025-06-27  09:29:19.211 | info | vpxt3onu8wkava | Checkpoint files will always be loaded safely.\n
+2025-06-27  09:29:19.210 | info | vpxt3onu8wkava | utils.py            :48   2025-06-27 03:59:19,026 Checkpoint files will always be loaded safely.\n
+2025-06-27  09:29:19.210 | info | vpxt3onu8wkava | \n
+2025-06-27  09:29:19.210 | info | vpxt3onu8wkava | main.py             :95   2025-06-27 03:59:18,958 \n
+2025-06-27  09:29:19.210 | info | vpxt3onu8wkava |    4.9 seconds (PRESTARTUP FAILED): /runpod-volume/ComfyUI/custom_nodes/ComfyUI-Manager\n
+2025-06-27  09:29:19.210 | info | vpxt3onu8wkava | main.py             :94   2025-06-27 03:59:18,958    4.9 seconds (PRESTARTUP FAILED): /runpod-volume/ComfyUI/custom_nodes/ComfyUI-Manager\n
+2025-06-27  09:29:19.210 | info | vpxt3onu8wkava |    0.0 seconds: /runpod-volume/ComfyUI/custom_nodes/rgthree-comfy\n
+2025-06-27  09:29:19.210 | info | vpxt3onu8wkava | main.py             :94   2025-06-27 03:59:18,958    0.0 seconds: /runpod-volume/ComfyUI/custom_nodes/rgthree-comfy\n
+2025-06-27  09:29:19.210 | info | vpxt3onu8wkava | Prestartup times for custom nodes:\n
+2025-06-27  09:29:19.210 | info | vpxt3onu8wkava | \n
+2025-06-27  09:29:19.210 | info | vpxt3onu8wkava | Prestartup times for custom nodes:\n
+2025-06-27  09:29:19.210 | info | vpxt3onu8wkava | main.py             :88   2025-06-27 03:59:18,958 \n
+2025-06-27  09:29:19.210 | info | vpxt3onu8wkava | Failed to execute startup-script: /runpod-volume/ComfyUI/custom_nodes/ComfyUI-Manager/prestartup_script.py / module '__main__' has no attribute '__file__'\n
+2025-06-27  09:29:18.958 | info | vpxt3onu8wkava | main.py             :66   2025-06-27 03:59:18,957 Failed to execute startup-script: /runpod-volume/ComfyUI/custom_nodes/ComfyUI-Manager/prestartup_script.py / module '__main__' has no attribute '__file__'\n
+2025-06-27  09:29:18.958 | info | vpxt3onu8wkava | '/runpod-volume/ComfyUI' added to sys.path\n
+2025-06-27  09:29:14.018 | info | vpxt3onu8wkava | ComfyUI found: /runpod-volume/ComfyUI\n
+2025-06-27  09:29:14.018 | info | vpxt3onu8wkava | Starting serverless handler with direct import...\n
+2025-06-27  09:29:14.018 | info | vpxt3onu8wkava | RunPod version: 1.7.12\n
+2025-06-27  09:28:45.146 | info | b5k73t2on2n1ex | Starting serverless handler with direct import...\n
+2025-06-27  09:28:44.716 | info | b5k73t2on2n1ex | RunPod version: 1.7.12\n
+2025-06-27  09:28:44.716 | info | b5k73t2on2n1ex | Verifying RunPod SDK...\n
+2025-06-27  09:28:44.715 | info | b5k73t2on2n1ex | ✅ Activating existing venv\n
+2025-06-27  09:28:32.785 | info | b5k73t2on2n1ex | === STARTING RUNPOD SERVERLESS ===\n
+2025-06-27  09:28:32.785 | info | b5k73t2on2n1ex | ✅ Handler imported: True\n
+2025-06-27  09:28:32.785 | info | b5k73t2on2n1ex | Could not find the extra_model_paths config file.\n
+2025-06-27  09:28:32.784 | info | b5k73t2on2n1ex | Could not import load_extra_path_config from main.py. Looking in utils.extra_config instead.\n
+2025-06-27  09:28:32.784 | info | b5k73t2on2n1ex | [DONE] Security scan\n
+2025-06-27  09:28:30.396 | info | b5k73t2on2n1ex | [START] Security scan\n
+2025-06-27  09:28:23.040 | info | b5k73t2on2n1ex | Using pytorch attention\n
+2025-06-27  09:28:23.040 | info | b5k73t2on2n1ex | Device: cuda:0 NVIDIA GeForce RTX 4090 : native\n
+2025-06-27  09:28:23.040 | info | b5k73t2on2n1ex | Set vram state to: NORMAL_VRAM\n
+2025-06-27  09:28:23.039 | info | b5k73t2on2n1ex | pytorch version: 2.1.0+cu118\n
+2025-06-27  09:28:16.525 | info | b5k73t2on2n1ex | Total VRAM 24210 MB, total RAM 257554 MB\n
+2025-06-27  09:28:15.633 | info | b5k73t2on2n1ex | Warning, you are using an old pytorch version and some ckpt/pt files might be loaded unsafely. Upgrading to 2.4 or above is recommended.\n
+2025-06-27  09:28:15.633 | info | b5k73t2on2n1ex | \n
+2025-06-27  09:28:15.633 | info | b5k73t2on2n1ex |    6.2 seconds (PRESTARTUP FAILED): /runpod-volume/ComfyUI/custom_nodes/ComfyUI-Manager\n
+2025-06-27  09:28:15.633 | info | b5k73t2on2n1ex |    0.0 seconds: /runpod-volume/ComfyUI/custom_nodes/rgthree-comfy\n
+2025-06-27  09:28:15.633 | info | b5k73t2on2n1ex | Prestartup times for custom nodes:\n
+2025-06-27  09:28:15.632 | info | b5k73t2on2n1ex | \n
+2025-06-27  09:28:15.511 | info | b5k73t2on2n1ex | Failed to execute startup-script: /runpod-volume/ComfyUI/custom_nodes/ComfyUI-Manager/prestartup_script.py / module '__main__' has no attribute '__file__'\n
+2025-06-27  09:28:15.510 | info | b5k73t2on2n1ex | '/runpod-volume/ComfyUI' added to sys.path\n
+2025-06-27  09:28:09.092 | info | b5k73t2on2n1ex | ComfyUI found: /runpod-volume/ComfyUI\n
+2025-06-27  09:28:09.092 | info | b5k73t2on2n1ex |   device: torch.device = torch.device(torch._C._get_default_device()),  # torch.device('cpu'),\n
+2025-06-27  09:28:09.092 | info | b5k73t2on2n1ex | /usr/local/lib/python3.10/dist-packages/torch/nn/modules/transformer.py:20: UserWarning: Failed to initialize NumPy: _ARRAY_API not found (Triggered internally at ../torch/csrc/utils/tensor_numpy.cpp:84.)\n
+2025-06-27  09:28:09.092 | info | b5k73t2on2n1ex |     device: torch.device = torch.device(torch._C._get_default_device()),  # torch.device('cpu'),\n
+2025-06-27  09:28:09.092 | info | b5k73t2on2n1ex |   File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/transformer.py", line 20, in <module>\n
+2025-06-27  09:28:09.092 | info | b5k73t2on2n1ex |     from .transformer import TransformerEncoder, TransformerDecoder, \\n
+2025-06-27  09:28:09.092 | info | b5k73t2on2n1ex |   File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/__init__.py", line 35, in <module>\n
+2025-06-27  09:28:09.091 | info | b5k73t2on2n1ex |     from .modules import *  # noqa: F403\n
+2025-06-27  09:28:09.091 | info | b5k73t2on2n1ex |   File "/usr/local/lib/python3.10/dist-packages/torch/nn/__init__.py", line 1, in <module>\n
+2025-06-27  09:28:09.091 | info | b5k73t2on2n1ex |     import torch.nn.functional as F\n
+2025-06-27  09:28:09.091 | info | b5k73t2on2n1ex |   File "/usr/local/lib/python3.10/dist-packages/torch/functional.py", line 7, in <module>\n
+2025-06-27  09:28:09.091 | info | b5k73t2on2n1ex |     from .functional import *  # noqa: F403\n
+2025-06-27  09:28:09.091 | info | b5k73t2on2n1ex |   File "/usr/local/lib/python3.10/dist-packages/torch/__init__.py", line 1382, in <module>\n
+2025-06-27  09:28:09.091 | info | b5k73t2on2n1ex |     import torch\n
+2025-06-27  09:28:09.091 | info | b5k73t2on2n1ex |   File "/runpod-volume/ComfyUI/realism.py", line 7, in <module>\n
+2025-06-27  09:28:09.091 | info | b5k73t2on2n1ex | Traceback (most recent call last):  File "<string>", line 1, in <module>\n
+2025-06-27  09:28:09.091 | info | b5k73t2on2n1ex | \n
+2025-06-27  09:28:09.091 | info | b5k73t2on2n1ex | We expect that some modules will need time to support NumPy 2.\n
+2025-06-27  09:28:09.090 | info | b5k73t2on2n1ex | downgrade to 'numpy<2' or try to upgrade the affected module.\n
+2025-06-27  09:28:09.090 | info | b5k73t2on2n1ex | If you are a user of the module, the easiest solution will be to\n
+2025-06-27  09:28:09.090 | info | b5k73t2on2n1ex | \n
+2025-06-27  09:28:09.090 | info | b5k73t2on2n1ex | Some module may need to rebuild instead e.g. with 'pybind11>=2.12'.\n
+2025-06-27  09:28:09.090 | info | b5k73t2on2n1ex | versions of NumPy, modules must be compiled with NumPy 2.0.\n
+2025-06-27  09:28:09.090 | info | b5k73t2on2n1ex | NumPy 2.2.6 as it may crash. To support both 1.x and 2.x\n
+2025-06-27  09:28:09.090 | info | b5k73t2on2n1ex | A module that was compiled using NumPy 1.x cannot be run in\n
+2025-06-27  09:28:09.090 | info | b5k73t2on2n1ex | \n
+2025-06-27  09:28:09.090 | info | b5k73t2on2n1ex | Python import test:\n
+2025-06-27  09:28:09.090 | info | b5k73t2on2n1ex | -rw-rw-rw- 1 root root 37393 Jun 25 13:36 /runpod-volume/ComfyUI/realism.py\n
+2025-06-27  09:28:09.090 | info | b5k73t2on2n1ex | Handler file verification:\n
+2025-06-27  09:28:09.090 | info | b5k73t2on2n1ex | drwxrwxrwx  3 root root 1005272 Jun  4 08:56 web\n
+2025-06-27  09:28:09.089 | info | b5k73t2on2n1ex | drwxrwxrwx  7 root root 3000709 Jun 23 12:22 venv\n
+2025-06-27  09:28:09.089 | info | b5k73t2on2n1ex | drwxrwxrwx  3 root root 1000916 Jun 21 16:17 utils\n
+2025-06-27  09:28:09.089 | info | b5k73t2on2n1ex | drwxrwxrwx  3 root root 2000909 Jun 25 10:45 user\n
+2025-06-27  09:28:09.089 | info | b5k73t2on2n1ex | drwxrwxrwx 12 root root 1007953 Jun  8 12:07 tests-unit\n
+2025-06-27  09:28:09.089 | info | b5k73t2on2n1ex | drwxrwxrwx  4 root root 1008478 Jun  4 08:20 tests\n
+2025-06-27  09:28:09.089 | info | b5k73t2on2n1ex | drwxrwxrwx  2 root root 2030908 Jun 26 18:37 temp\n
+2025-06-27  09:28:09.089 | info | b5k73t2on2n1ex | -rwxrwxrwx  1 root root    1706 Jun 14 13:01 start.sh\n
+2025-06-27  09:28:09.089 | info | b5k73t2on2n1ex | -rw-rw-rw-  1 root root   37634 Jun 21 16:17 server.py\n
+2025-06-27  09:28:09.089 | info | b5k73t2on2n1ex | drwxrwxrwx  2 root root 1001212 Jun  4 08:20 script_examples\n
+2025-06-27  09:28:09.089 | info | b5k73t2on2n1ex | -rw-rw-rw-  1 root root    1456 Jun 14 13:01 runpod.json\n
+2025-06-27  09:28:09.089 | info | b5k73t2on2n1ex | -rw-rw-rw-  1 root root     420 Jun 22 14:35 requirements.txt\n
+2025-06-27  09:28:09.088 | info | b5k73t2on2n1ex | -rw-rw-rw-  1 root root   37393 Jun 25 13:36 realism.py\n
+2025-06-27  09:28:09.088 | info | b5k73t2on2n1ex | -rw-rw-rw-  1 root root     227 Jun  4 08:20 pytest.ini\n
+2025-06-27  09:28:09.088 | info | b5k73t2on2n1ex | -rw-rw-rw-  1 root root     656 Jun 21 16:17 pyproject.toml\n
+2025-06-27  09:28:09.088 | info | b5k73t2on2n1ex | drwxrwxrwx  3 root root 2080850 Jun 25 13:17 output\n
+2025-06-27  09:28:09.088 | info | b5k73t2on2n1ex | drwxrwxrwx  2 root root 1001498 Jun  4 08:20 notebooks\n
+2025-06-27  09:28:09.088 | info | b5k73t2on2n1ex | -rw-rw-rw-  1 root root   95617 Jun 21 16:17 nodes.py\n
+2025-06-27  09:28:09.088 | info | b5k73t2on2n1ex | -rw-rw-rw-  1 root root    1684 Jun  4 08:20 node_helpers.py\n
+2025-06-27  09:28:09.088 | info | b5k73t2on2n1ex | -rw-rw-rw-  1 root root    1261 Jun  4 08:20 new_updater.py\n
+2025-06-27  09:28:09.088 | info | b5k73t2on2n1ex | drwxrwxrwx 29 root root 3006652 Jun 25 10:34 models\n
+2025-06-27  09:28:09.088 | info | b5k73t2on2n1ex | -rw-rw-rw-  1 root root   12720 Jun 21 16:17 main.py\n
+2025-06-27  09:28:09.088 | info | b5k73t2on2n1ex | -rw-rw-rw-  1 root root    4349 Jun  4 08:20 latent_preview.py\n
+2025-06-27  09:28:09.088 | info | b5k73t2on2n1ex | drwxrwxrwx  3 root root 2010897 Jun 26 07:50 input\n
+2025-06-27  09:28:09.087 | info | b5k73t2on2n1ex | -rw-rw-rw-  1 root root     366 Jun  4 08:20 hook_breaker_ac10a0.py\n
+2025-06-27  09:28:09.087 | info | b5k73t2on2n1ex | -rw-rw-rw-  1 root root   37393 Jun 25 13:36 handler.py\n
+2025-06-27  09:28:09.087 | info | b5k73t2on2n1ex | -rw-rw-rw-  1 root root   15907 Jun 21 16:17 folder_paths.py\n
+2025-06-27  09:28:09.087 | info | b5k73t2on2n1ex | -rw-rw-rw-  1 root root    1480 Jun  4 08:20 extra_model_paths.yaml.example\n
+2025-06-27  09:28:09.087 | info | b5k73t2on2n1ex | -rw-rw-rw-  1 root root   41787 Jun 21 16:17 execution.py\n
+2025-06-27  09:28:09.087 | info | b5k73t2on2n1ex | drwxrwxrwx 21 root root 2045600 Jun 25 09:43 custom_nodes\n
+2025-06-27  09:28:09.087 | info | b5k73t2on2n1ex | -rw-rw-rw-  1 root root    3533 Jun  4 08:20 cuda_malloc.py\n
+2025-06-27  09:28:09.087 | info | b5k73t2on2n1ex | -rw-rw-rw-  1 root root     128 Jun 21 16:17 comfyui_version.py\n
+2025-06-27  09:28:09.087 | info | b5k73t2on2n1ex | drwxrwxrwx  4 root root 2000146 Jun 21 16:17 comfy_extras\n
+2025-06-27  09:28:09.087 | info | b5k73t2on2n1ex | drwxrwxrwx  3 root root 1012104 Jun  4 08:26 comfy_execution\n
+2025-06-27  09:28:09.087 | info | b5k73t2on2n1ex | drwxrwxrwx  3 root root 1001617 Jun 21 16:23 comfy_config\n
+2025-06-27  09:28:09.086 | info | b5k73t2on2n1ex | drwxrwxrwx  5 root root 2000180 Jun 21 16:17 comfy_api_nodes\n
+2025-06-27  09:28:09.086 | info | b5k73t2on2n1ex | drwxrwxrwx  6 root root 1006411 Jun  4 08:20 comfy_api\n
+2025-06-27  09:28:09.086 | info | b5k73t2on2n1ex | drwxrwxrwx 14 root root 2001967 Jun 21 16:17 comfy\n
+2025-06-27  09:28:09.086 | info | b5k73t2on2n1ex | -rw-rw-rw-  1 root root    4234 Jun 25 13:11 b2_config.py\n
+2025-06-27  09:28:09.086 | info | b5k73t2on2n1ex | drwxrwxrwx  4 root root 1016475 Jun 21 16:17 app\n
+2025-06-27  09:28:09.086 | info | b5k73t2on2n1ex | drwxrwxrwx  6 root root 1002206 Jun  4 08:26 api_server\n
+2025-06-27  09:28:09.086 | info | b5k73t2on2n1ex | drwxrwxrwx  2 root root 1000255 Jun 21 16:17 alembic_db\n
+2025-06-27  09:28:09.086 | info | b5k73t2on2n1ex | -rw-rw-rw-  1 root root    3230 Jun 21 16:17 alembic.ini\n
+2025-06-27  09:28:09.086 | info | b5k73t2on2n1ex | drwxrwxrwx  2 root root 1045613 Jun 26 07:17 __pycache__\n
+2025-06-27  09:28:09.086 | info | b5k73t2on2n1ex | -rw-rw-rw-  1 root root   25500 Jun 21 16:17 README.md\n
+2025-06-27  09:28:09.086 | info | b5k73t2on2n1ex | -rw-rw-rw-  1 root root   35149 Jun  4 08:20 LICENSE\n
+2025-06-27  09:28:09.085 | info | b5k73t2on2n1ex | -rw-rw-rw-  1 root root    1882 Jun  4 08:20 CONTRIBUTING.md\n
+2025-06-27  09:28:09.085 | info | b5k73t2on2n1ex | -rw-rw-rw-  1 root root    1512 Jun  8 12:07 CODEOWNERS\n
+2025-06-27  09:28:09.085 | info | b5k73t2on2n1ex | -rw-rw-rw-  1 root root      82 Jun 21 16:17 =14.2.0\n
+2025-06-27  09:28:09.085 | info | b5k73t2on2n1ex | -rw-rw-rw-  1 root root   10173 Jun 15 11:32 =1.5.0\n
+2025-06-27  09:28:09.085 | info | b5k73t2on2n1ex | -rw-rw-rw-  1 root root   12406 Jun 15 11:32 =1.28.0\n
+2025-06-27  09:28:09.085 | info | b5k73t2on2n1ex | -rw-rw-rw-  1 root root     224 Jun 26 18:36 .runpod_jobs.pkl\n
+2025-06-27  09:28:09.085 | info | b5k73t2on2n1ex | drwxrwxrwx  2 root root 1007924 Jun 18 16:19 .ipynb_checkpoints\n
+2025-06-27  09:28:09.085 | info | b5k73t2on2n1ex | -rw-rw-rw-  1 root root     382 Jun  4 08:20 .gitignore\n
+2025-06-27  09:28:09.085 | info | b5k73t2on2n1ex | drwxrwxrwx  4 root root 1003174 Jun  4 08:20 .github\n
+2025-06-27  09:28:09.085 | info | b5k73t2on2n1ex | -rw-rw-rw-  1 root root      60 Jun  4 08:20 .gitattributes\n
+2025-06-27  09:28:09.085 | info | b5k73t2on2n1ex | drwxrwxrwx  9 root root 2007125 Jun 23 12:44 .git\n
+2025-06-27  09:28:09.084 | info | b5k73t2on2n1ex | drwxrwxrwx  5 root root 1000704 Jun  4 08:20 .ci\n
+2025-06-27  09:28:09.084 | info | b5k73t2on2n1ex | drwxrwxrwx  6 root root 3007536 Jun 23 13:34 ..\n
+2025-06-27  09:28:09.084 | info | b5k73t2on2n1ex | drwxrwxrwx 29 root root 3007536 Jun 26 18:36 .\n
+2025-06-27  09:28:09.084 | info | b5k73t2on2n1ex | total 45635\n
+2025-06-27  09:28:09.084 | info | b5k73t2on2n1ex | Directory structure:\n
+2025-06-27  09:28:09.084 | info | b5k73t2on2n1ex |   RUNPOD_HANDLER_NAME=runpod_handler\n
+2025-06-27  09:28:09.084 | info | b5k73t2on2n1ex |   RUNPOD_HANDLER_PATH=/runpod-volume/ComfyUI/realism.py\n
+2025-06-27  09:28:09.084 | info | b5k73t2on2n1ex | Environment variables:\n
+2025-06-27  09:28:09.084 | info | b5k73t2on2n1ex | Working directory: /runpod-volume/ComfyUI\n
+2025-06-27  09:28:09.084 | info | b5k73t2on2n1ex | Current time: Fri Jun 27 03:57:59 UTC 2025\n
+2025-06-27  09:28:09.084 | info | b5k73t2on2n1ex | === RUNPOD CONTAINER STARTUP ===\n
+2025-06-27  09:28:09.084 | info | b5k73t2on2n1ex | \n
+2025-06-27  09:28:09.083 | info | b5k73t2on2n1ex | A copy of this license is made available in this container at /NGC-DL-CONTAINER-LICENSE for your convenience.\n
+2025-06-27  09:28:09.083 | info | b5k73t2on2n1ex | \n
+2025-06-27  09:28:09.083 | info | b5k73t2on2n1ex | https://developer.nvidia.com/ngc/nvidia-deep-learning-container-license\n
+2025-06-27  09:28:09.083 | info | b5k73t2on2n1ex | By pulling and using the container, you accept the terms and conditions of this license:\n
+2025-06-27  09:28:09.083 | info | b5k73t2on2n1ex | This container image and its contents are governed by the NVIDIA Deep Learning Container License.\n
+2025-06-27  09:28:09.083 | info | b5k73t2on2n1ex | \n
+2025-06-27  09:28:09.083 | info | b5k73t2on2n1ex | Container image Copyright (c) 2016-2023, NVIDIA CORPORATION & AFFILIATES. All rights reserved.\n
+2025-06-27  09:28:09.083 | info | b5k73t2on2n1ex | \n
+2025-06-27  09:28:09.083 | info | b5k73t2on2n1ex | CUDA Version 11.8.0\n
+2025-06-27  09:28:09.083 | info | b5k73t2on2n1ex | \n
+2025-06-27  09:28:09.083 | info | b5k73t2on2n1ex | ==========\n
+2025-06-27  09:28:09.082 | info | b5k73t2on2n1ex | == CUDA ==\n
+2025-06-27  09:28:09.082 | info | b5k73t2on2n1ex | ==========\n
+2025-06-27  09:28:09.082 | info | b5k73t2on2n1ex | \n
+2025-06-27  09:27:51.903 | info | sob58sx85bay3w | --- Starting Serverless Worker |  Version 1.7.12 ---\n
+2025-06-27  09:27:51.903 | info | sob58sx85bay3w | Handler imported successfully\n
+2025-06-27  09:27:51.903 | info | sob58sx85bay3w | Could not find the extra_model_paths config file.\n
+2025-06-27  09:27:51.903 | info | sob58sx85bay3w | Could not import load_extra_path_config from main.py. Looking in utils.extra_config instead.\n
+2025-06-27  09:27:51.903 | info | sob58sx85bay3w | [DONE] Security scan\n
+2025-06-27  09:27:51.019 | info | dm1bz7o5a891l2 | --- Starting Serverless Worker |  Version 1.7.12 ---\n
+2025-06-27  09:27:51.018 | info | dm1bz7o5a891l2 | Handler imported successfully\n
+2025-06-27  09:27:51.018 | info | dm1bz7o5a891l2 | Could not find the extra_model_paths config file.\n
+2025-06-27  09:27:51.018 | info | dm1bz7o5a891l2 | Could not import load_extra_path_config from main.py. Looking in utils.extra_config instead.\n
+2025-06-27  09:27:51.018 | info | dm1bz7o5a891l2 | [DONE] Security scan\n
+2025-06-27  09:27:50.907 | info | sob58sx85bay3w | [START] Security scan\n
+2025-06-27  09:27:50.907 | info | sob58sx85bay3w | Using pytorch attention\n
+2025-06-27  09:27:50.144 | info | dm1bz7o5a891l2 | [START] Security scan\n
+2025-06-27  09:27:50.144 | info | dm1bz7o5a891l2 | Using pytorch attention\n
+2025-06-27  09:27:46.749 | info | sob58sx85bay3w | attention.py        :588  2025-06-27 03:57:46,749 Using pytorch attention\n
+2025-06-27  09:27:46.749 | info | sob58sx85bay3w | Device: cuda:0 NVIDIA GeForce RTX 4090 : native\n
+2025-06-27  09:27:46.749 | info | sob58sx85bay3w | model_management.py :392  2025-06-27 03:57:42,321 Device: cuda:0 NVIDIA GeForce RTX 4090 : native\n
+2025-06-27  09:27:46.749 | info | sob58sx85bay3w | Set vram state to: NORMAL_VRAM\n
+2025-06-27  09:27:46.749 | info | sob58sx85bay3w | model_management.py :365  2025-06-27 03:57:42,321 Set vram state to: NORMAL_VRAM\n
+2025-06-27  09:27:46.749 | info | sob58sx85bay3w | pytorch version: 2.5.1+cu121\n
+2025-06-27  09:27:46.749 | info | sob58sx85bay3w | model_management.py :226  2025-06-27 03:57:42,320 pytorch version: 2.5.1+cu121\n
+2025-06-27  09:27:46.749 | info | sob58sx85bay3w | Total VRAM 24210 MB, total RAM 257554 MB\n
+2025-06-27  09:27:46.350 | info | dm1bz7o5a891l2 | attention.py        :588  2025-06-27 03:57:46,350 Using pytorch attention\n
+2025-06-27  09:27:46.350 | info | dm1bz7o5a891l2 | Device: cuda:0 NVIDIA GeForce RTX 4090 : native\n
+2025-06-27  09:27:46.350 | info | dm1bz7o5a891l2 | model_management.py :392  2025-06-27 03:57:41,497 Device: cuda:0 NVIDIA GeForce RTX 4090 : native\n
+2025-06-27  09:27:46.350 | info | dm1bz7o5a891l2 | Set vram state to: NORMAL_VRAM\n
+2025-06-27  09:27:46.350 | info | dm1bz7o5a891l2 | model_management.py :365  2025-06-27 03:57:41,497 Set vram state to: NORMAL_VRAM\n
+2025-06-27  09:27:46.350 | info | dm1bz7o5a891l2 | pytorch version: 2.5.1+cu121\n
+2025-06-27  09:27:46.350 | info | dm1bz7o5a891l2 | model_management.py :226  2025-06-27 03:57:41,496 pytorch version: 2.5.1+cu121\n
+2025-06-27  09:27:46.350 | info | dm1bz7o5a891l2 | Total VRAM 24210 MB, total RAM 257554 MB\n
+2025-06-27  09:27:42.321 | info | sob58sx85bay3w | model_management.py :223  2025-06-27 03:57:42,320 Total VRAM 24210 MB, total RAM 257554 MB\n
+2025-06-27  09:27:42.321 | info | sob58sx85bay3w | Checkpoint files will always be loaded safely.\n
+2025-06-27  09:27:42.321 | info | sob58sx85bay3w | utils.py            :48   2025-06-27 03:57:42,134 Checkpoint files will always be loaded safely.\n
+2025-06-27  09:27:42.321 | info | sob58sx85bay3w | \n
+2025-06-27  09:27:42.320 | info | sob58sx85bay3w | main.py             :95   2025-06-27 03:57:42,081 \n
+2025-06-27  09:27:42.320 | info | sob58sx85bay3w |    4.1 seconds (PRESTARTUP FAILED): /runpod-volume/ComfyUI/custom_nodes/ComfyUI-Manager\n
+2025-06-27  09:27:42.320 | info | sob58sx85bay3w | main.py             :94   2025-06-27 03:57:42,081    4.1 seconds (PRESTARTUP FAILED): /runpod-volume/ComfyUI/custom_nodes/ComfyUI-Manager\n
+2025-06-27  09:27:42.320 | info | sob58sx85bay3w |    0.0 seconds: /runpod-volume/ComfyUI/custom_nodes/rgthree-comfy\n
+2025-06-27  09:27:42.320 | info | sob58sx85bay3w | main.py             :94   2025-06-27 03:57:42,081    0.0 seconds: /runpod-volume/ComfyUI/custom_nodes/rgthree-comfy\n
+2025-06-27  09:27:42.320 | info | sob58sx85bay3w | Prestartup times for custom nodes:\n
+2025-06-27  09:27:42.320 | info | sob58sx85bay3w | \n
+2025-06-27  09:27:42.320 | info | sob58sx85bay3w | Prestartup times for custom nodes:\n
+2025-06-27  09:27:42.320 | info | sob58sx85bay3w | main.py             :88   2025-06-27 03:57:42,081 \n
+2025-06-27  09:27:42.320 | info | sob58sx85bay3w | Failed to execute startup-script: /runpod-volume/ComfyUI/custom_nodes/ComfyUI-Manager/prestartup_script.py / module '__main__' has no attribute '__file__'\n
+2025-06-27  09:27:42.081 | info | sob58sx85bay3w | main.py             :66   2025-06-27 03:57:42,080 Failed to execute startup-script: /runpod-volume/ComfyUI/custom_nodes/ComfyUI-Manager/prestartup_script.py / module '__main__' has no attribute '__file__'\n
+2025-06-27  09:27:42.081 | info | sob58sx85bay3w | '/runpod-volume/ComfyUI' added to sys.path\n
+2025-06-27  09:27:41.496 | info | dm1bz7o5a891l2 | model_management.py :223  2025-06-27 03:57:41,495 Total VRAM 24210 MB, total RAM 257554 MB\n
+2025-06-27  09:27:41.496 | info | dm1bz7o5a891l2 | Checkpoint files will always be loaded safely.\n
+2025-06-27  09:27:41.496 | info | dm1bz7o5a891l2 | utils.py            :48   2025-06-27 03:57:41,322 Checkpoint files will always be loaded safely.\n
+2025-06-27  09:27:41.496 | info | dm1bz7o5a891l2 | \n
+2025-06-27  09:27:41.496 | info | dm1bz7o5a891l2 | main.py             :95   2025-06-27 03:57:41,272 \n
+2025-06-27  09:27:41.496 | info | dm1bz7o5a891l2 |    4.2 seconds (PRESTARTUP FAILED): /runpod-volume/ComfyUI/custom_nodes/ComfyUI-Manager\n
+2025-06-27  09:27:41.496 | info | dm1bz7o5a891l2 | main.py             :94   2025-06-27 03:57:41,272    4.2 seconds (PRESTARTUP FAILED): /runpod-volume/ComfyUI/custom_nodes/ComfyUI-Manager\n
+2025-06-27  09:27:41.496 | info | dm1bz7o5a891l2 |    0.0 seconds: /runpod-volume/ComfyUI/custom_nodes/rgthree-comfy\n
+2025-06-27  09:27:41.496 | info | dm1bz7o5a891l2 | main.py             :94   2025-06-27 03:57:41,271    0.0 seconds: /runpod-volume/ComfyUI/custom_nodes/rgthree-comfy\n
+2025-06-27  09:27:41.496 | info | dm1bz7o5a891l2 | Prestartup times for custom nodes:\n
+2025-06-27  09:27:41.496 | info | dm1bz7o5a891l2 | \n
+2025-06-27  09:27:41.496 | info | dm1bz7o5a891l2 | Prestartup times for custom nodes:\n
+2025-06-27  09:27:41.496 | info | dm1bz7o5a891l2 | main.py             :88   2025-06-27 03:57:41,271 \n
+2025-06-27  09:27:41.496 | info | dm1bz7o5a891l2 | Failed to execute startup-script: /runpod-volume/ComfyUI/custom_nodes/ComfyUI-Manager/prestartup_script.py / module '__main__' has no attribute '__file__'\n
+2025-06-27  09:27:41.272 | info | dm1bz7o5a891l2 | main.py             :66   2025-06-27 03:57:41,271 Failed to execute startup-script: /runpod-volume/ComfyUI/custom_nodes/ComfyUI-Manager/prestartup_script.py / module '__main__' has no attribute '__file__'\n
+2025-06-27  09:27:41.272 | info | dm1bz7o5a891l2 | '/runpod-volume/ComfyUI' added to sys.path\n
+2025-06-27  09:27:41.272 | info | dm1bz7o5a891l2 | ComfyUI found: /runpod-volume/ComfyUI\n
+2025-06-27  09:27:41.272 | info | dm1bz7o5a891l2 | Starting serverless handler with direct import...\n
+2025-06-27  09:27:41.272 | info | dm1bz7o5a891l2 | RunPod version: 1.7.12\n
+2025-06-27  09:27:37.936 | info | sob58sx85bay3w | ComfyUI found: /runpod-volume/ComfyUI\n
+2025-06-27  09:27:37.936 | info | sob58sx85bay3w | Starting serverless handler with direct import...\n
+2025-06-27  09:27:37.936 | info | sob58sx85bay3w | RunPod version: 1.7.12\n
+2025-06-27  09:27:37.936 | info | sob58sx85bay3w | Verifying RunPod SDK...\n
+2025-06-27  09:27:37.936 | info | sob58sx85bay3w | ✅ Activating existing venv\n
+2025-06-27  09:27:37.936 | info | sob58sx85bay3w | === STARTING RUNPOD SERVERLESS ===\n
+2025-06-27  09:27:37.936 | info | sob58sx85bay3w | ✅ Handler imported: True\n
+2025-06-27  09:27:37.936 | info | sob58sx85bay3w | Could not find the extra_model_paths config file.\n
+2025-06-27  09:27:37.936 | info | sob58sx85bay3w | Could not import load_extra_path_config from main.py. Looking in utils.extra_config instead.\n
+2025-06-27  09:27:37.936 | info | sob58sx85bay3w | [DONE] Security scan\n
+2025-06-27  09:27:37.936 | info | sob58sx85bay3w | [START] Security scan\n
+2025-06-27  09:27:18.630 | info | vpxt3onu8wkava | --- Starting Serverless Worker |  Version 1.7.12 ---\n
+2025-06-27  09:27:18.630 | info | vpxt3onu8wkava | Handler imported successfully\n
+2025-06-27  09:27:18.630 | info | vpxt3onu8wkava | Could not find the extra_model_paths config file.\n
+2025-06-27  09:27:18.630 | info | vpxt3onu8wkava | Could not import load_extra_path_config from main.py. Looking in utils.extra_config instead.\n
+2025-06-27  09:27:18.630 | info | vpxt3onu8wkava | [DONE] Security scan\n
+2025-06-27  09:27:17.379 | info | vpxt3onu8wkava | [START] Security scan\n
+2025-06-27  09:27:17.379 | info | vpxt3onu8wkava | Using pytorch attention\n
+2025-06-27  09:27:16.608 | info | b5k73t2on2n1ex | --- Starting Serverless Worker |  Version 1.7.12 ---\n
+2025-06-27  09:27:16.608 | info | b5k73t2on2n1ex | Handler imported successfully\n
+2025-06-27  09:27:16.608 | info | b5k73t2on2n1ex | Could not find the extra_model_paths config file.\n
+2025-06-27  09:27:16.608 | info | b5k73t2on2n1ex | Could not import load_extra_path_config from main.py. Looking in utils.extra_config instead.\n
+2025-06-27  09:27:16.607 | info | b5k73t2on2n1ex | [DONE] Security scan\n
+2025-06-27  09:27:14.290 | info | b5k73t2on2n1ex | [START] Security scan\n
+2025-06-27  09:27:14.290 | info | b5k73t2on2n1ex | Using pytorch attention\n
+2025-06-27  09:27:12.770 | info | vpxt3onu8wkava | attention.py        :588  2025-06-27 03:57:12,769 Using pytorch attention\n
+2025-06-27  09:27:12.770 | info | vpxt3onu8wkava | Device: cuda:0 NVIDIA GeForce RTX 4090 : native\n

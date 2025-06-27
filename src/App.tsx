@@ -2,18 +2,20 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Outlet } from "react-router-dom";
 import { AuthProvider } from "@/contexts/AuthContext";
 import { ProtectedRoute } from "@/components/ProtectedRoute";
-import Index from "./pages/Index";
 import Auth from "./pages/Auth";
-import Dashboard from "./pages/Dashboard";
-import EnhancedDashboard from "./pages/EnhancedDashboard";
 import NotFound from "./pages/NotFound";
-import ImageStudio from "./pages/ImageStudio";
-import VideoService from "./pages/VideoService";
+import Studio from "./pages/Studio";
 import PricingPage from "./pages/PricingPage";
 import ContactPage from "./pages/ContactPage";
+import StudioDashboard from "./pages/StudioDashboard";
+import ProjectsPage from "./pages/ProjectsPage";
+import SkinRealismPage from "./pages/tools/SkinRealismPage";
+import ImageUpscalerPage from "./pages/tools/ImageUpscalerPage";
+import SkinRefinerPage from "./pages/tools/SkinRefinerPage";
+import { AppLayout } from './components/layout/AppLayout';
 
 const queryClient = new QueryClient();
 
@@ -25,29 +27,31 @@ const App = () => (
         <Sonner />
         <BrowserRouter>
           <Routes>
-            <Route path="/" element={<Index />} />
+            {/* Public marketing pages */}
+            <Route path="/" element={<Studio />} />
             <Route path="/auth" element={<Auth />} />
-            <Route path="/image-studio" element={<ImageStudio />} />
-            <Route path="/video-service" element={<VideoService />} />
             <Route path="/pricing" element={<PricingPage />} />
             <Route path="/contact" element={<ContactPage />} />
-            <Route
-              path="/dashboard"
+
+            {/* Protected App Layout */}
+            <Route 
+              path="/" 
               element={
                 <ProtectedRoute>
-                  <EnhancedDashboard />
+                  <AppLayout>
+                    <Outlet />
+                  </AppLayout>
                 </ProtectedRoute>
               }
-            />
-            <Route
-              path="/dashboard-old"
-              element={
-                <ProtectedRoute>
-                  <Dashboard />
-                </ProtectedRoute>
-              }
-            />
-            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+            >
+              <Route path="dashboard" element={<StudioDashboard />} />
+              <Route path="projects" element={<ProjectsPage />} />
+              <Route path="tools/image-studio" element={<SkinRealismPage />} />
+              <Route path="tools/image-upscaler" element={<ImageUpscalerPage />} />
+              <Route path="tools/skin-refiner" element={<SkinRefinerPage />} />
+            </Route>
+            
+            {/* Catch-all Not Found route */}
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>

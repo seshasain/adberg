@@ -5,7 +5,6 @@ import { Textarea } from '@/components/ui/textarea';
 import { Card, CardContent } from '@/components/ui/card';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Button } from '@/components/ui/button';
-import { createConsultation, CreateConsultationData } from '@/lib/consultationService';
 import { useAuth } from '@/contexts/AuthContext';
 import { toast } from 'sonner';
 
@@ -16,25 +15,22 @@ const Contact = () => {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
+    
+    // This is a placeholder. In a real application, you'd send this data to a server.
     const formData = new FormData(e.currentTarget);
-    const data = Object.fromEntries(formData.entries()) as Omit<CreateConsultationData, 'source'>;
+    const name = formData.get('name');
+    const email = formData.get('email');
+    const message = formData.get('message');
+    console.log('Form Submitted (no backend):', { name, email, message });
 
-    try {
-      const { error } = await createConsultation({ ...data, source: 'homepage' });
+    // Simulate network request
+    await new Promise(resolve => setTimeout(resolve, 1000));
 
-      if (error) {
-        toast.error("Error submitting consultation request", { description: error });
-      } else {
-        toast.success("Consultation request submitted successfully!", {
-          description: "We'll review your requirements and get back to you within 24 hours.",
-        });
-        (e.target as HTMLFormElement).reset();
-      }
-    } catch (err) {
-      toast.error("An unexpected error occurred.", { description: "Please try again or contact support." });
-    } finally {
-      setIsSubmitting(false);
-    }
+    toast.success("Message sent successfully!", {
+      description: "Thanks for reaching out. We'll get back to you shortly.",
+    });
+    (e.target as HTMLFormElement).reset();
+    setIsSubmitting(false);
   };
 
   return (

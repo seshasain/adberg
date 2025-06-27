@@ -2,7 +2,7 @@ import React, { createContext, useContext, useEffect, useState } from 'react'
 import { User, Session } from '@supabase/supabase-js'
 import { supabase } from '@/lib/supabase'
 import { createUser, getUserByAuthId } from '@/lib/userService'
-import { linkAnonymousConsultations } from '@/lib/consultationService'
+// import { linkAnonymousConsultations } from '@/lib/consultationService'
 import { toast } from '@/hooks/use-toast'
 
 interface AuthContextType {
@@ -63,6 +63,7 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
           })
         }
 
+        /*
         // Link any anonymous consultations to this user
         if (session.user.email) {
           try {
@@ -77,6 +78,7 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
             console.error('Error linking consultations:', err)
           }
         }
+        */
 
         toast({
           title: "Welcome back!",

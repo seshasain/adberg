@@ -20,11 +20,16 @@ const Navigation = () => {
   const location = useLocation();
 
   const navItems = [
-    { name: 'AI Image Studio', href: '/image-studio' },
-    { name: 'Video Ad Service', href: '/video-service' },
+    { name: 'AI Image Studio', href: '/tools/image-studio' },
+    { name: 'Image Upscaler', href: '/tools/image-upscaler' },
+    { name: 'Projects', href: '/projects' },
     { name: 'Pricing', href: '/pricing' },
     { name: 'Contact', href: '/contact' },
   ];
+
+  // Filter navigation items based on current location
+  const isOnDashboard = location.pathname === '/dashboard';
+  const displayNavItems = isOnDashboard ? [] : navItems;
 
   const handleNavClick = (href: string) => {
     if (href.startsWith('/')) {
@@ -48,8 +53,6 @@ const Navigation = () => {
     navigate('/');
   };
 
-  const isOnDashboard = location.pathname === '/dashboard';
-
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-black/95 backdrop-blur-xl shadow-xl border-b border-gray-800/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -69,7 +72,7 @@ const Navigation = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-10">
-            {navItems.map((item, index) => (
+            {displayNavItems.map((item, index) => (
               <button
                 key={item.name}
                 onClick={() => handleNavClick(item.href)}
@@ -146,7 +149,7 @@ const Navigation = () => {
       {isMenuOpen && (
         <div className="md:hidden bg-black/95 backdrop-blur-xl border-t border-gray-800/30 animate-fade-in">
           <div className="px-4 pt-4 pb-6 space-y-4">
-            {navItems.map((item) => (
+            {displayNavItems.map((item) => (
               <button
                 key={item.name}
                 onClick={() => handleNavClick(item.href)}
